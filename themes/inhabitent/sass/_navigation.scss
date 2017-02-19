@@ -28,19 +28,26 @@ a {
 
 .main-navigation {
 	clear: both;
-	display: block;
-	float: left;
+	display: flex;
+	justify-content: flex-end;
 	width: 100%;
+	padding: 5px;
+	background: url(../../images/logos/inhabitent-logo-tent.svg);
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+	background-position: 5%; 
+	background-color: white;
+	opacity: .8;
 
 	ul {
-		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+		display: flex;
+		flex-direction: row;
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
 			position: absolute;
 			top: $base__space-unit;
 			left: -999rem;
@@ -52,6 +59,7 @@ a {
 			}
 
 			li {
+				display: inline-block;
 				&:hover > ul,
 				&.focus > ul {
 					left: 100%;
@@ -77,8 +85,6 @@ a {
 		}
 	}
 	li {
-		float: left;
-		position: relative;
 
 		&:hover > a,
 		&.focus > a {
@@ -128,5 +134,38 @@ a {
 		float: right;
 		text-align: right;
 		width: 50%;
+	}
+}
+
+/* New CSS */
+
+#masthead {
+	width: 100%;
+	position: fixed;
+	border-bottom: 1px solid #e1e1e1;
+	z-index: +1;
+
+	i {
+		padding: 10px;
+
+		.fa-search-icon {
+	
+		}
+	}
+	
+
+	ul {
+		display: flex;
+		// padding-right: 70px;
+
+		li {
+			display: inline-block;
+			padding: 10px;
+
+			a {
+				color: #808080;
+				text-transform: uppercase;
+			}
+		}
 	}
 }

@@ -47,3 +47,57 @@
 .bypostauthor {
 	display: block;
 }
+
+/* New CSS */
+
+#content {
+	width: 1120px;
+	margin: 0 auto;
+}
+
+.site-content {
+	display: flex;
+}
+
+#primary {
+	width: 73%;
+	margin: 55px auto 0 auto;
+	padding: 5% 5% 0 0;
+	border-right: 1px solid #e1e1e1;
+}
+
+
+.entry-header {
+	position: relative;
+	line-height: 1.75rem;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	.entry-title{
+		font-family: 'novecentosanswide-demibold-webfont';
+		position: absolute;
+		padding: 10px;
+		background-color: #248A83;
+		top: 0px;
+		width: 70%;
+		
+		a {
+			color: white;
+			font-size: 36px;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+	}
+
+	.entry-meta {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		margin: 8px 0;
+		background-color: #248A83;
+		color: white;
+	}
+}
