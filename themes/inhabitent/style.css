@@ -678,25 +678,25 @@ a {
   padding: 5% 5% 0 0;
   border-right: 1px solid #e1e1e1; }
 
-.entry-header {
+.blog .entry-header {
   position: relative;
   line-height: 1.75rem; }
-  .entry-header img {
+  .blog .entry-header img {
     width: 100%;
     height: auto; }
-  .entry-header .entry-title {
+  .blog .entry-header .entry-title {
     font-family: 'novecentosanswide-demibold-webfont';
     position: absolute;
-    padding: 10px;
+    padding: 15px;
     background-color: #248A83;
     top: 0px;
-    width: 70%; }
-    .entry-header .entry-title a {
+    width: 75%; }
+    .blog .entry-header .entry-title a {
       color: white;
       font-size: 36px;
       text-decoration: none;
       text-transform: uppercase; }
-  .entry-header .entry-meta {
+  .blog .entry-header .entry-meta {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -704,14 +704,17 @@ a {
     background-color: #248A83;
     color: white; }
 
+.about-head {
+  height: 100vh;
+  width: 100%;
+  background-color: black; }
+
 #colophon {
   height: 512px;
   background-image: url(../../images/dark-wood@2x.png);
   background-size: 512px 512px; }
   #colophon .fa {
-    font-size: 1.25rem;
-    width: 30px;
-    height: 30px; }
+    font-size: 1.25rem; }
   #colophon .site-info {
     display: -ms-flexbox;
     display: flex;
@@ -724,8 +727,8 @@ a {
           flex-direction: column;
       color: white;
       padding: 5%;
-      -ms-flex-preferred-size: 25%;
-          flex-basis: 25%; }
+      -ms-flex-preferred-size: 27%;
+          flex-basis: 27%; }
       #colophon .site-info .contact-info h3 {
         color: #d99054;
         font-family: 'novecentosanswide-demibold-webfont'; }
