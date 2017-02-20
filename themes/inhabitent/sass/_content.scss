@@ -57,17 +57,18 @@
 
 .site-content {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 #primary {
-	width: 73%;
+	flex-basis: 73%;
 	margin: 55px auto 0 auto;
 	padding: 5% 5% 0 0;
 	border-right: 1px solid #e1e1e1;
 }
 
 
-.blog .entry-header {
+.blog, .entry-header {
 	position: relative;
 	line-height: 1.75rem;
 
@@ -101,3 +102,13 @@
 		color: white;
 	}
 }
+
+.page {
+		h2 {
+			font-family: 'novecentosanswide-demibold-webfont';
+			text-transform: uppercase;
+			font-size: 30px;
+			font-weight: bold;
+		}
+}
+

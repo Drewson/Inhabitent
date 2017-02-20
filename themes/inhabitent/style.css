@@ -537,6 +537,13 @@ a {
   position: fixed;
   border-bottom: 1px solid #e1e1e1;
   z-index: +1; }
+  #masthead .site-title {
+    height: 30px;
+    width: 30px; }
+  #masthead .site-branding a {
+    width: 100px;
+    background-color: red;
+    height: 100px; }
   #masthead i {
     padding: 10px; }
   #masthead ul {
@@ -550,12 +557,23 @@ a {
         text-transform: uppercase; }
 
 #secondary {
-  width: 27%;
   height: 100%;
+  -ms-flex-preferred-size: 27%;
+      flex-basis: 27%;
   margin: 55px auto 0 auto;
   padding: 5% 0 0 5%;
   color: #2f1339;
   line-height: 1.75rem; }
+  #secondary h2 {
+    font-family: 'novecentosanswide-demibold-webfont'; }
+
+.bold-sidebar {
+  font-size: 16px;
+  font-family: 'merriweather-bold-webfont';
+  font-weight: 900; }
+
+.widget-title {
+  font-size: 30px; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -670,33 +688,36 @@ a {
 
 .site-content {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 #primary {
-  width: 73%;
+  -ms-flex-preferred-size: 73%;
+      flex-basis: 73%;
   margin: 55px auto 0 auto;
   padding: 5% 5% 0 0;
   border-right: 1px solid #e1e1e1; }
 
-.blog .entry-header {
+.blog, .entry-header {
   position: relative;
   line-height: 1.75rem; }
-  .blog .entry-header img {
+  .blog img, .entry-header img {
     width: 100%;
     height: auto; }
-  .blog .entry-header .entry-title {
+  .blog .entry-title, .entry-header .entry-title {
     font-family: 'novecentosanswide-demibold-webfont';
     position: absolute;
     padding: 15px;
     background-color: #248A83;
     top: 0px;
     width: 75%; }
-    .blog .entry-header .entry-title a {
+    .blog .entry-title a, .entry-header .entry-title a {
       color: white;
       font-size: 36px;
       text-decoration: none;
       text-transform: uppercase; }
-  .blog .entry-header .entry-meta {
+  .blog .entry-meta, .entry-header .entry-meta {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -704,17 +725,19 @@ a {
     background-color: #248A83;
     color: white; }
 
-.about-head {
-  height: 100vh;
-  width: 100%;
-  background-color: black; }
+.page h2 {
+  font-family: 'novecentosanswide-demibold-webfont';
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold; }
 
 #colophon {
   height: 512px;
   background-image: url(../../images/dark-wood@2x.png);
   background-size: 512px 512px; }
   #colophon .fa {
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    padding-right: 7px; }
   #colophon .site-info {
     display: -ms-flexbox;
     display: flex;

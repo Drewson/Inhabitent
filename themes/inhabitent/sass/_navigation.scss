@@ -145,6 +145,17 @@ a {
 	border-bottom: 1px solid #e1e1e1;
 	z-index: +1;
 
+	.site-title {
+		height: 30px;
+		width: 30px;
+	}
+
+	.site-branding a {
+		width: 100px;
+		background-color: red;
+		height: 100px;
+	}
+
 	i {
 		padding: 10px;
 
