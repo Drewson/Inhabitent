@@ -71,9 +71,10 @@
 	font-family: 'novecentosanswide-demibold-webfont';
 }
 
-.blog .entry-header {
+.single-post .entry-header {
+	letter-spacing: .2rem;
 	position: relative;
-	line-height: 1.75rem;
+	line-height: 2.5rem;
 
 	img {
 		width: 100%;
@@ -82,11 +83,15 @@
 
 	.entry-title{
 		position: absolute;
-		padding: 15px;
+		padding: 20px;
 		background-color: #248A83;
 		top: 0px;
 		width: 75%;
+		color: white;
+		font-size: 32px !important; 
 		
+
+
 		a {
 			color: white;
 			font-size: 36px;
@@ -96,23 +101,61 @@
 	}
 
 	.entry-meta {
+		font-size: 14px;
 		position: absolute;
 		right: 0;
 		bottom: 0;
-		margin: 8px 0;
+		margin: 14px 0;
+		background-color: #248A83;
+		color: white;
+	}
+} 
+
+// USE A MIXIN!
+
+
+.blog .entry-header {
+	letter-spacing: .2rem;
+	position: relative;
+	line-height: 2.5rem;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	.entry-title{
+		position: absolute;
+		padding: 20px;
+		background-color: #248A83;
+		top: 0px;
+		width: 75%;
+		
+		a {
+			color: white;
+			font-size: 32px;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+	}
+
+	.entry-meta {
+		font-size: 14px;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		margin: 14px 0;
 		background-color: #248A83;
 		color: white;
 	}
 }
 
 #primary {
-		h2 {
-			font-family: 'novecentosanswide-demibold-webfont';
-			text-transform: uppercase;
-			font-size: 30px;
-			font-weight: bold;
-		}
-
-		
+	h2 {
+		font-family: 'novecentosanswide-demibold-webfont';
+		text-transform: uppercase;
+		font-size: 30px;
+		font-weight: bold;
+	}
 }
 
