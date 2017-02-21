@@ -67,8 +67,11 @@
 	border-right: 1px solid #e1e1e1;
 }
 
+.entry-title {
+	font-family: 'novecentosanswide-demibold-webfont';
+}
 
-.blog, .entry-header {
+.blog .entry-header {
 	position: relative;
 	line-height: 1.75rem;
 
@@ -78,7 +81,6 @@
 	}
 
 	.entry-title{
-		font-family: 'novecentosanswide-demibold-webfont';
 		position: absolute;
 		padding: 15px;
 		background-color: #248A83;
@@ -103,12 +105,14 @@
 	}
 }
 
-.page {
+#primary {
 		h2 {
 			font-family: 'novecentosanswide-demibold-webfont';
 			text-transform: uppercase;
 			font-size: 30px;
 			font-weight: bold;
 		}
+
+		
 }
 

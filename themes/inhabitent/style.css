@@ -258,6 +258,13 @@ th {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'novecentosanswide-normal-webfont';
+  src: url("../../fonts/novecentosanswide-normal-webfont.eot");
+  src: url("../../fonts/novecentosanswide-normal-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -533,6 +540,7 @@ a {
 
 /* New CSS */
 #masthead {
+  font-family: 'novecentosanswide-normal-webfont';
   width: 100%;
   position: fixed;
   border-bottom: 1px solid #e1e1e1;
@@ -573,7 +581,7 @@ a {
   font-weight: 900; }
 
 .widget-title {
-  font-size: 30px; }
+  font-size: 26px; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -699,25 +707,27 @@ a {
   padding: 5% 5% 0 0;
   border-right: 1px solid #e1e1e1; }
 
-.blog, .entry-header {
+.entry-title {
+  font-family: 'novecentosanswide-demibold-webfont'; }
+
+.blog .entry-header {
   position: relative;
   line-height: 1.75rem; }
-  .blog img, .entry-header img {
+  .blog .entry-header img {
     width: 100%;
     height: auto; }
-  .blog .entry-title, .entry-header .entry-title {
-    font-family: 'novecentosanswide-demibold-webfont';
+  .blog .entry-header .entry-title {
     position: absolute;
     padding: 15px;
     background-color: #248A83;
     top: 0px;
     width: 75%; }
-    .blog .entry-title a, .entry-header .entry-title a {
+    .blog .entry-header .entry-title a {
       color: white;
       font-size: 36px;
       text-decoration: none;
       text-transform: uppercase; }
-  .blog .entry-meta, .entry-header .entry-meta {
+  .blog .entry-header .entry-meta {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -725,11 +735,30 @@ a {
     background-color: #248A83;
     color: white; }
 
-.page h2 {
+#primary h2 {
   font-family: 'novecentosanswide-demibold-webfont';
   text-transform: uppercase;
   font-size: 30px;
   font-weight: bold; }
+
+.hero-banner {
+  height: 800px;
+  background: url("../../images/logos/inhabitent-logo-full.svg") center center no-repeat, linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg);
+  background-size: auto, cover, cover; }
+
+.about-head {
+  height: 800px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #969696 url(../../images/about-hero.jpg);
+  background-size: cover, cover; }
+
+.page h2 {
+  text-align: center;
+  font-family: 'novecentosanswide-demibold-webfont';
+  text-transform: uppercase;
+  font-size: 30px; }
+
+.page .entry-content {
+  padding: 0 10% 10% 10%; }
 
 #colophon {
   height: 512px;
