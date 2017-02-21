@@ -15,17 +15,18 @@
     }
 }
 
-.page-about {
-    h2 {
-        text-align: center;
-        font-family: 'novecentosanswide-demibold-webfont';
-        text-transform: uppercase;
-        font-size: 30px;
-    }
 
-    // .entry-content {
-    //     padding: 5% 15%;
-    // }
+.page-about {
+	.entry-content{
+		margin: 5% 15%;
+	}
+
+	h2 {
+		font-size: 34px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'novecentosanswide-demibold-webfont';
+	}
 
     .entry-title {
         display: none;

@@ -475,8 +475,7 @@ a {
   background-repeat: no-repeat;
   background-size: 50px 50px;
   background-position: 5%;
-  background-color: white;
-  opacity: .8; }
+  background-color: transparent; }
   .main-navigation ul {
     list-style: none;
     margin: 0;
@@ -544,7 +543,8 @@ a {
   width: 100%;
   position: fixed;
   border-bottom: 1px solid #e1e1e1;
-  z-index: +1; }
+  z-index: +1;
+  background: rgba(255, 255, 255, 0.8); }
   #masthead .home-link {
     width: 100px;
     height: 50px;
@@ -569,9 +569,9 @@ a {
 #masthead-home {
   font-family: 'novecentosanswide-normal-webfont';
   width: 100%;
-  border-bottom: 1px solid #e1e1e1;
   z-index: +1;
-  position: absolute; }
+  position: absolute;
+  background: rgba(255, 255, 255, 0); }
   #masthead-home .home-link {
     width: 100px;
     height: 50px;
@@ -593,7 +593,7 @@ a {
       display: inline-block;
       padding: 10px; }
       #masthead-home ul li a {
-        color: #808080;
+        color: white;
         text-transform: uppercase; }
 
 #secondary {
@@ -742,6 +742,11 @@ a {
   margin: 55px auto 0 auto;
   padding: 5% 5% 0 0;
   border-right: 1px solid #e1e1e1; }
+  #primary h2 {
+    font-family: 'novecentosanswide-demibold-webfont';
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold; }
 
 .entry-title {
   font-family: 'novecentosanswide-demibold-webfont'; }
@@ -787,10 +792,12 @@ a {
     padding: 20px;
     background-color: #248A83;
     top: 0px;
-    width: 75%; }
+    width: 75%;
+    color: white;
+    font-size: 32px !important; }
     .blog .entry-header .entry-title a {
       color: white;
-      font-size: 32px;
+      font-size: 36px;
       text-decoration: none;
       text-transform: uppercase; }
   .blog .entry-header .entry-meta {
@@ -802,16 +809,39 @@ a {
     background-color: #248A83;
     color: white; }
 
-#primary h2 {
-  font-family: 'novecentosanswide-demibold-webfont';
+button {
+  border: 1px solid black;
+  width: 140px;
+  height: 40px;
+  padding: 5px;
+  margin: 0 20px 40px 20px;
+  background-color: white;
   text-transform: uppercase;
-  font-size: 30px;
-  font-weight: bold; }
+  font-size: 14px; }
+  button a {
+    text-decoration: none;
+    font-family: 'novecentosanswide-normal-webfont';
+    color: black; }
+
+button:hover {
+  background-color: #248A83; }
+  button:hover a {
+    color: white; }
 
 .hero-banner {
   height: 800px;
   background: url("../../images/logos/inhabitent-logo-full.svg") center center no-repeat, linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg);
   background-size: auto, cover, cover; }
+
+.recent-posts {
+  height: 500px;
+  width: 100%;
+  background-color: red; }
+
+.home h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'novecentosanswide-normal-webfont'; }
 
 .about-head {
   display: -ms-flexbox;
@@ -831,11 +861,14 @@ a {
     color: white;
     font-family: 'novecentosanswide-demibold-webfont'; }
 
+.page-about .entry-content {
+  margin: 5% 15%; }
+
 .page-about h2 {
+  font-size: 34px;
   text-align: center;
-  font-family: 'novecentosanswide-demibold-webfont';
   text-transform: uppercase;
-  font-size: 30px; }
+  font-family: 'novecentosanswide-demibold-webfont'; }
 
 .page-about .entry-title {
   display: none; }
@@ -863,6 +896,7 @@ a {
           flex-basis: 27%; }
       #colophon .site-info .contact-info h3 {
         color: #d99054;
+        text-transform: uppercase;
         font-family: 'novecentosanswide-demibold-webfont'; }
       #colophon .site-info .contact-info a {
         color: white;
@@ -870,7 +904,7 @@ a {
         padding-top: 5px; }
     #colophon .site-info .business-hours {
       color: white;
-      padding: 5%;
+      padding: 5% 1%;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
@@ -881,7 +915,8 @@ a {
         padding: 7px; }
       #colophon .site-info .business-hours h3 {
         font-family: 'novecentosanswide-demibold-webfont';
-        color: #d99054; }
+        color: #d99054;
+        text-transform: uppercase; }
   #colophon .inhab-logo-text {
     -ms-flex-preferred-size: 40%;
         flex-basis: 40%; }

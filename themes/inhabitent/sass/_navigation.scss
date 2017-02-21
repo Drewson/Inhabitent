@@ -36,8 +36,7 @@ a {
 	background-repeat: no-repeat;
 	background-size: 50px 50px;
 	background-position: 5%; 
-	background-color: white;
-	opacity: .8;
+	background-color: rgba(0, 0, 0, 0);
 
 	ul {
 		list-style: none;
@@ -146,6 +145,7 @@ a {
 	position: fixed;
 	border-bottom: 1px solid #e1e1e1;
 	z-index: +1;
+	background: rgba(255, 255, 255, .8 );
 
 	.home-link {
 		width: 100px;
@@ -184,9 +184,9 @@ a {
 #masthead-home {
 	font-family: 'novecentosanswide-normal-webfont';
 	width: 100%;
-	border-bottom: 1px solid #e1e1e1;
 	z-index: +1;
 	position: absolute;
+	background: rgba(255, 255, 255, 0 );
 
 	.home-link {
 		width: 100px;
@@ -220,7 +220,7 @@ a {
 			padding: 10px;
 
 			a {
-				color: #808080;
+				color: white;
 				text-transform: uppercase;
 			}
 		}

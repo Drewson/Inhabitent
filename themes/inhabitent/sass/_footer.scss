@@ -1,13 +1,4 @@
 
-// #colophon {
-//     height: 512px;
-//     width: 100%;
-//     display: block;
-//     color: black;
-//     // background-image: url('../images/dark-wood@2x.png');
-//     background-size: 512px 512px;
-// }
-
 #colophon {
     height: 512px;
     background-image: url(../../images/dark-wood@2x.png);
@@ -33,6 +24,7 @@
 
             h3 {
                 color: #d99054;
+                text-transform: uppercase;
                 font-family: 'novecentosanswide-demibold-webfont';
             }
 
@@ -45,7 +37,7 @@
 
         .business-hours {
             color: white;
-            padding: 5%;       
+            padding: 5% 1%;       
             display: flex;
             flex-direction: column;
             flex-basis: 30%;
@@ -57,6 +49,7 @@
             h3 {
                 font-family: 'novecentosanswide-demibold-webfont';
                 color: #d99054;
+                text-transform: uppercase;   /////Mixin
             }
         }
     }
