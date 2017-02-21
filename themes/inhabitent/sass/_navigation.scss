@@ -147,6 +147,55 @@ a {
 	border-bottom: 1px solid #e1e1e1;
 	z-index: +1;
 
+	.home-link {
+		width: 100px;
+		height: 50px;
+		position: absolute;
+		top: 10px;
+		left: 60px;
+	}
+
+	.site-title {
+		height: 30px;
+		width: 30px;
+	}
+
+	i {
+		padding: 10px;
+	}
+	
+
+	ul {
+		display: flex;
+		// padding-right: 70px;
+
+		li {
+			display: inline-block;
+			padding: 10px;
+
+			a {
+				color: #808080;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+#masthead-home {
+	font-family: 'novecentosanswide-normal-webfont';
+	width: 100%;
+	border-bottom: 1px solid #e1e1e1;
+	z-index: +1;
+	position: absolute;
+
+	.home-link {
+		width: 100px;
+		height: 50px;
+		position: absolute;
+		top: 10px;
+		left: 60px;
+	}
+
 	.site-title {
 		height: 30px;
 		width: 30px;
@@ -154,16 +203,11 @@ a {
 
 	.site-branding a {
 		width: 100px;
-		background-color: red;
 		height: 100px;
 	}
 
 	i {
 		padding: 10px;
-
-		.fa-search-icon {
-	
-		}
 	}
 	
 

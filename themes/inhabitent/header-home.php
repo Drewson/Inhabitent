@@ -18,9 +18,11 @@
 
 	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site">
-			<header id="masthead" class="site-header" role="banner">
+			<!--<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>-->
+
+			<header id="masthead-home" class="site-header" role="banner">
 				<div class="site-branding">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><h1 class="site-title screen-reader-text"><?php bloginfo( 'name' ); ?></a></h1>
+				<h1 class="site-title screen-reader-text"><?php bloginfo( 'name' ); ?></h1>
 				</div><!-- .site-branding -->
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="home-link"></a>

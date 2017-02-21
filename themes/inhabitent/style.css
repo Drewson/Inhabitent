@@ -545,13 +545,15 @@ a {
   position: fixed;
   border-bottom: 1px solid #e1e1e1;
   z-index: +1; }
+  #masthead .home-link {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 60px; }
   #masthead .site-title {
     height: 30px;
     width: 30px; }
-  #masthead .site-branding a {
-    width: 100px;
-    background-color: red;
-    height: 100px; }
   #masthead i {
     padding: 10px; }
   #masthead ul {
@@ -561,6 +563,36 @@ a {
       display: inline-block;
       padding: 10px; }
       #masthead ul li a {
+        color: #808080;
+        text-transform: uppercase; }
+
+#masthead-home {
+  font-family: 'novecentosanswide-normal-webfont';
+  width: 100%;
+  border-bottom: 1px solid #e1e1e1;
+  z-index: +1;
+  position: absolute; }
+  #masthead-home .home-link {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 60px; }
+  #masthead-home .site-title {
+    height: 30px;
+    width: 30px; }
+  #masthead-home .site-branding a {
+    width: 100px;
+    height: 100px; }
+  #masthead-home i {
+    padding: 10px; }
+  #masthead-home ul {
+    display: -ms-flexbox;
+    display: flex; }
+    #masthead-home ul li {
+      display: inline-block;
+      padding: 10px; }
+      #masthead-home ul li a {
         color: #808080;
         text-transform: uppercase; }
 
@@ -574,6 +606,8 @@ a {
   line-height: 1.75rem; }
   #secondary h2 {
     font-family: 'novecentosanswide-demibold-webfont'; }
+  #secondary i {
+    width: 30px; }
 
 .bold-sidebar {
   font-size: 16px;
@@ -747,18 +781,31 @@ a {
   background-size: auto, cover, cover; }
 
 .about-head {
-  height: 800px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 100vh;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #969696 url(../../images/about-hero.jpg);
   background-size: cover, cover; }
+  .about-head h1 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 46px;
+    color: white;
+    font-family: 'novecentosanswide-demibold-webfont'; }
 
-.page h2 {
+.page-about h2 {
   text-align: center;
   font-family: 'novecentosanswide-demibold-webfont';
   text-transform: uppercase;
   font-size: 30px; }
 
-.page .entry-content {
-  padding: 0 10% 10% 10%; }
+.page-about .entry-title {
+  display: none; }
 
 #colophon {
   height: 512px;

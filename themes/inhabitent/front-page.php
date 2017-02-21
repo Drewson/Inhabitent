@@ -5,7 +5,7 @@
  * @package RED_Starter_Theme
  */
 
-get_header(); ?>
+get_header('home'); ?>
 
 	<div class="hero-banner">
 	</div>
