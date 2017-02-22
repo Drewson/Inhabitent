@@ -463,6 +463,12 @@ a {
     outline: 0; }
 
 /* Menus */
+.home .main-navigation {
+  background: url(../../images/logos/inhabitent-logo-tent-white.svg);
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: 5%; }
+
 .main-navigation {
   clear: both;
   display: -ms-flexbox;
@@ -829,6 +835,26 @@ button:hover {
   button:hover a {
     color: white; }
 
+.shop-flex {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.shop-product {
+  display: inline-block;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  height: 300px;
+  border: 1px solid #a1a1a1;
+  margin: 15px; }
+  .shop-product p {
+    text-align: center; }
+  .shop-product img {
+    border-bottom: 5px inset lightgray;
+    height: 80%; }
+
 .hero-banner {
   height: 800px;
   background: url("../../images/logos/inhabitent-logo-full.svg") center center no-repeat, linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg);
@@ -841,32 +867,34 @@ button:hover {
   -ms-flex-pack: center;
       justify-content: center; }
   .recent-posts .recent-post {
+    position: relative;
     margin: 15px;
     border: 1px solid #a1a1a1;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
     width: 400px;
     height: 400px; }
     .recent-posts .recent-post .post-text {
-      -ms-flex-preferred-size: 10%;
-          flex-basis: 10%;
-      padding: 10px 20px;
-      border-top: 5px inset lightgray; }
+      width: 100%;
+      padding: 5px 10px;
+      font-size: 14px; }
     .recent-posts .recent-post .post-title {
-      -ms-flex-preferred-size: 20%;
-          flex-basis: 20%;
+      width: 100%;
       text-transform: uppercase;
-      font-family: 'novecentosanswide-normal-webfont'; }
+      font-family: 'novecentosanswide-demibold-webfont';
+      color: #248A83;
+      font-size: 20px;
+      padding: 0 10px; }
     .recent-posts .recent-post button {
-      position: relative;
+      font-family: 'novecentosanswide-normal-webfont';
+      position: absolute;
       bottom: -30px;
       left: -10px; }
     .recent-posts .recent-post .post-image {
-      -ms-flex-preferred-size: 70%;
-          flex-basis: 70%;
-      overflow: hidden; }
+      width: 100%;
+      height: 60%;
+      overflow: hidden;
+      border-bottom: 5px inset lightgray; }
+      .recent-posts .recent-post .post-image img {
+        height: 100%; }
 
 .home h2 {
   text-align: center;

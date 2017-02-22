@@ -21,16 +21,14 @@ get_header('home'); ?>
 			$myposts = get_posts( $args );
 			foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
 				<div class="recent-post">
-					<span class="post-image"><?php the_post_thumbnail( 'small' ); ?></span>
-					<span class="post-text"><?php red_starter_posted_on(); ?>
-					<?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
-					<span class="post-title"><?php the_title(); ?></span>
-					<button>Read Entry</button>
+					<div class="post-image"><?php the_post_thumbnail( 'small' ); ?></div>
+					<div class="post-text"><?php red_starter_posted_on(); ?>  / 
+					<?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?><br></div>
+					<div class="post-title"><?php the_title(); ?></div>
+					<button><a href='<?php the_permalink(); ?>'> Read Entry</a></button>
 				</div>
 			<?php endforeach; 
 			wp_reset_postdata();?>
-
-			</ul>
 		</div>
 
 		<h2>Latest Adventures</h2>

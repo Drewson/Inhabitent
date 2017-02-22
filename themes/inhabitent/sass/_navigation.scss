@@ -26,6 +26,13 @@ a {
 
 /* Menus */
 
+.home .main-navigation {
+	background: url(../../images/logos/inhabitent-logo-tent-white.svg);
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+	background-position: 5%; 
+}
+
 .main-navigation {
 	clear: both;
 	display: flex;

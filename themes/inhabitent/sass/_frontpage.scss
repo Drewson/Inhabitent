@@ -11,37 +11,42 @@
     justify-content: center;
 
     .recent-post {
+        position: relative;
         margin: 15px;
         border: 1px solid #a1a1a1;
-        display: flex;
-        flex-direction: column;
         width: 400px;
         height: 400px;
 
         .post-text {
-            flex-basis: 10%;
-            padding: 10px 20px;
-            border-top: 5px inset lightgray;
+            width: 100%;
+            padding:5px 10px;
+            font-size: 14px;
         }
 
         .post-title {
-            flex-basis: 20%;
+            width: 100%;
             text-transform: uppercase;
-            font-family: 'novecentosanswide-normal-webfont';
+            font-family: 'novecentosanswide-demibold-webfont';
+            color: #248A83;
+            font-size: 20px;
+            padding: 0 10px;
         }
 
         button {
-            position: relative;
+            font-family: 'novecentosanswide-normal-webfont';
+            position: absolute;
             bottom: -30px;
             left: -10px;
         }
 
-        .post-image {
-            flex-basis: 70%;
+        .post-image{
+            width: 100%;
+            height: 60%;
             overflow: hidden;
+            border-bottom: 5px inset lightgray;
 
             img {
-                
+                height: 100%;
             }
         }
     }

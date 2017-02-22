@@ -21,7 +21,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content' ); ?>
-				<button><a href="">Read More &rarr;</a></button>
+				<button><a href="<?php the_permalink(); ?> ">Read More &rarr;</a></button>
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
