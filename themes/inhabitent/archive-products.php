@@ -19,8 +19,14 @@ get_header(); ?>
 			<ul class="shop-flex">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-				<li class="shop-product"><?php the_post_thumbnail( 'large' ); ?>
-				<p><?php the_title(); ?></p></li>
+				<li class="shop-product">
+					<div class="image-wrapper">
+						<a href="<?php the_permalink(); ?>" ><?php the_post_thumbnail( 'large' ); ?></a>
+					</div>
+					<div class="text-wrapper">
+						<p><?php the_title(); ?></p>
+					</div>
+					</li>
 			<?php endwhile; ?>
 			</ul>
 			<?php the_posts_navigation(); ?>

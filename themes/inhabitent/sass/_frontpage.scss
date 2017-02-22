@@ -5,6 +5,46 @@
     background-size: auto, cover, cover;
 }
 
+.shopstuff {
+    display: flex;
+    height: 300px;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 5%;
+
+    .shop-stuff-item {
+        flex-basis: 25%;
+        // padding: 20px;
+        margin: 20px;
+        border: 1px solid lightgray;
+        border-top: 5px solid lightgray;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            margin: 0 10px;
+        }
+
+        .categ-button {
+            background-color: #248A83;
+            border: none;
+            margin: 15px;
+
+            a {
+                color: white;
+            }
+        }
+
+        img {
+            height: 90px;
+            width: auto;
+            padding: 10px;
+        }
+    }
+}
+
 .recent-posts {
     display: flex;
     height: 500px;
@@ -53,6 +93,7 @@
 }
 
 .home h2 {
+    font-size: 30px;
     text-align: center;
     text-transform: uppercase;
     font-family: 'novecentosanswide-normal-webfont';

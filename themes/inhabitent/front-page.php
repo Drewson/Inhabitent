@@ -10,9 +10,27 @@ get_header('home'); ?>
 	<div class="hero-banner">
 	</div>
 	<div class="front-page-content">
-		<h2>Shop Stuff</h2>
-		<div class="shop-stuff">
-		</div>
+	
+	<h2>shop stuff</h2>
+<div class="shopstuff container">
+    <?php    
+        $terms = get_terms( array(
+          'taxonomy' => 'product_type',
+           'orderby' => 'name', ));
+        foreach ($terms as $term) :
+          $url = get_term_link ($term->slug , 'product_type');              
+    ?>  
+      <div class="shop-stuff-item">
+          <div class="product-icon-image">       
+              <img src="<?php echo get_template_directory_uri();?>/images/product-type-icons/<?php echo $term->slug; ?>.svg" alt="">
+          </div>
+          <p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
+          <button class="categ-button"><a href='<?php echo $url?>' class='button-link'><?php echo $term->name; ?> STUFF</a></button> 
+	</div>
+                        
+    <?php endforeach; ?>
+</div>
+
 
 		<h2>Inhabitent Journal</h2>
 		<div id="content" class="recent-posts">

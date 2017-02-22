@@ -11,13 +11,71 @@
     height: 300px;
     border: 1px solid #a1a1a1;
     margin: 15px;
+    
 
-    p {
+    .text-wrapper {
         text-align: center;
+        padding: 5px;
+        font-size: 18px;
+
+        p {
+            margin: 0;
+        }
     }
 
-    img {
-        border-bottom: 5px inset lightgray;
-        height: 80%;
+    .image-wrapper {
+        position: relative;
+        height: 250px;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            border-bottom: 5px inset lightgray;
+            max-height: 250px;
+            max-width: none;
+            width: auto;
+            transform: translate(-50%,-52%);
+        }
+    }
+    
+}
+
+.product {
+    margin-top: 100px;
+
+    .shop-item {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 0 100px 0;
+        font-size: 14px;
+
+        .item-img {
+            flex-basis: 50%;
+        }
+
+        .item-text {
+            padding: 0 40px;
+            flex-basis: 50%;
+
+            h2 {
+                font-size: 34px;
+                color: #d99054;
+                text-transform: uppercase;
+                font-family: 'novecentosanswide-demibold-webfont';
+                margin: 0;
+            }
+
+            button {
+                margin: 0;
+                width: 100px;
+
+                .fa {
+                    padding-right: 5px;
+                }
+            }
+        }
     }
 }

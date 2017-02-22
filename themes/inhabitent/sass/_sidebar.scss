@@ -19,10 +19,15 @@
     }
 }
 
-.bold-sidebar {
-    font-size: 16px;
-    font-family: 'merriweather-bold-webfont';
+.day-of-week {
+    font-family: 'merriweatherbold';
     font-weight: 900;
+}
+
+.widget {
+    p {
+        margin: 10px 0;
+    }
 }
 
 .widget-title {
