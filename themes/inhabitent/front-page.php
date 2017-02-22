@@ -15,17 +15,22 @@ get_header('home'); ?>
 		</div>
 
 		<h2>Inhabitent Journal</h2>
-		<div class="recent-posts">
+		<div id="content" class="recent-posts">
 			<?php
-   				$args = array( 'posts_per_page' => 3, 'post_type' => 'product', 'order' => 'ASC' );
-   				$product_posts = get_posts( $args ); // returns an array of posts
-			?>
-			<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); 
-				setup_postdata( $post ); ?>
-        		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-        		<?php the_content(); ?>
-			?>
-			<?php endforeach; wp_reset_postdata(); ?>
+			$args = array( 'posts_per_page' => 3, 'post_type' => 'post', 'orderby' => 'post-date' );
+			$myposts = get_posts( $args );
+			foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+				<div class="recent-post">
+					<span class="post-image"><?php the_post_thumbnail( 'small' ); ?></span>
+					<span class="post-text"><?php red_starter_posted_on(); ?>
+					<?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
+					<span class="post-title"><?php the_title(); ?></span>
+					<button>Read Entry</button>
+				</div>
+			<?php endforeach; 
+			wp_reset_postdata();?>
+
+			</ul>
 		</div>
 
 		<h2>Latest Adventures</h2>

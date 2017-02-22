@@ -824,7 +824,8 @@ button {
     color: black; }
 
 button:hover {
-  background-color: #248A83; }
+  background-color: #248A83;
+  color: white; }
   button:hover a {
     color: white; }
 
@@ -834,9 +835,38 @@ button:hover {
   background-size: auto, cover, cover; }
 
 .recent-posts {
+  display: -ms-flexbox;
+  display: flex;
   height: 500px;
-  width: 100%;
-  background-color: red; }
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .recent-posts .recent-post {
+    margin: 15px;
+    border: 1px solid #a1a1a1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 400px;
+    height: 400px; }
+    .recent-posts .recent-post .post-text {
+      -ms-flex-preferred-size: 10%;
+          flex-basis: 10%;
+      padding: 10px 20px;
+      border-top: 5px inset lightgray; }
+    .recent-posts .recent-post .post-title {
+      -ms-flex-preferred-size: 20%;
+          flex-basis: 20%;
+      text-transform: uppercase;
+      font-family: 'novecentosanswide-normal-webfont'; }
+    .recent-posts .recent-post button {
+      position: relative;
+      bottom: -30px;
+      left: -10px; }
+    .recent-posts .recent-post .post-image {
+      -ms-flex-preferred-size: 70%;
+          flex-basis: 70%;
+      overflow: hidden; }
 
 .home h2 {
   text-align: center;
