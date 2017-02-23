@@ -28,7 +28,20 @@
         font-family: 'novecentosanswide-demibold-webfont';
 	}
 
-    .entry-title {
-        display: none;
+
+    .entry-header {
+        display: flex;
+        justify-content: center;
+
+        .entry-title {
+            color: white;
+            align-self: center;
+            font-size: 44px;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'novecentosanswide-demibold-webfont';
     }
+
+    }
+    
 }
