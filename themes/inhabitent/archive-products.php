@@ -6,23 +6,29 @@
  */
 
 get_header(); ?>
-
-	<div >
+	<div>
 		<main id="main" class="site-main" role="main">
 		<?php if ( have_posts() ) : ?>
-			<header class="page-header">
-				<?php
-				function product_archive_title($title) {
-	if(is_post_type_archive('products')) {
-		$title = 'Shop Stuff';
-	}
-	return $title;
-}
-add_filter('get_the_archive_title', 'product_archive_title');
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+		<div>
+			<?php
+			function product_archive_title($title) {
+			if(is_post_type_archive('products')) {
+				$title = 'Shop Stuff';
+			}
+				return $title;
+			}
+			add_filter('get_the_archive_title', 'product_archive_title');
+			the_archive_title( '<h1 class="shop-title">', '</h1>' );
+			the_archive_description( '<div class="taxonomy-description">', '</div>' );
+			?>
+
+			<ul class="shop-nav">
+				<li>Do</li>
+				<li>Eat</li>
+				<li>Sleep</li>
+				<li>Wear</li>
+			</ul>
+		</div>
 			<ul class="shop-flex">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -31,7 +37,7 @@ add_filter('get_the_archive_title', 'product_archive_title');
 						<a href="<?php the_permalink(); ?>" ><?php the_post_thumbnail( 'large' ); ?></a>
 					</div>
 					<div class="text-wrapper">
-						<p><?php the_title(); ?></p>
+					<p class="price-text"><?php the_title();?><div class="dotted-bord"></div>$<?php echo CFS()->get('price');?></p>
 					</div>
 					</li>
 			<?php endwhile; ?>

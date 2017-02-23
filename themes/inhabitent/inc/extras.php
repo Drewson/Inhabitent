@@ -47,7 +47,7 @@ function inhabitent_about_img_css() {
         return;
     }
     
-    $image = CFS()->get('about_header_image');
+    $image = CFS()->get('about_header_image'); 
 
     if(!$image){
         return;
@@ -64,6 +64,7 @@ function inhabitent_about_img_css() {
 }
 
 add_action( 'wp_enqueue_scripts', 'inhabitent_about_img_css' );
+
 
 
 

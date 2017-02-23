@@ -383,6 +383,9 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
+h2 {
+  letter-spacing: 3px; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -517,6 +520,7 @@ a {
   font-family: 'novecentosanswide-normal-webfont';
   width: 100%;
   position: fixed;
+  top: 0;
   border-bottom: 1px solid #e1e1e1;
   z-index: +1;
   background: rgba(255, 255, 255, 0.8); }
@@ -810,6 +814,15 @@ button:hover {
   button:hover a {
     color: white; }
 
+input {
+  background-color: #F4F4F4; }
+
+textarea {
+  background-color: #F4F4F4; }
+
+label {
+  text-transform: uppercase; }
+
 input[type=submit] {
   border: none;
   width: 100px;
@@ -821,6 +834,9 @@ input[type=submit] {
   text-transform: uppercase;
   font-size: 14px; }
 
+input[type=submit]:hover {
+  background-color: #248A83; }
+
 .page-template-about {
   height: 100vh; }
 
@@ -830,6 +846,31 @@ input[type=submit] {
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+
+.shop-title {
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'novecentosanswide-demibold-webfont';
+  text-transform: uppercase;
+  font-size: 38px;
+  font-weight: bold; }
+
+.shop-nav {
+  text-decoration: none;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  border-bottom: 1px dashed #a1a1a1; }
+  .shop-nav li {
+    font-family: 'novecentosanswide-normal-webfont';
+    text-transform: uppercase;
+    color: #808080;
+    padding: 20px;
+    padding-bottom: 40px;
+    font-size: 18px;
+    display: inline-block; }
 
 .shop-product {
   display: inline-block;
@@ -841,7 +882,7 @@ input[type=submit] {
   .shop-product .text-wrapper {
     text-align: center;
     padding: 5px;
-    font-size: 18px; }
+    font-size: 16px; }
     .shop-product .text-wrapper p {
       margin: 0; }
   .shop-product .image-wrapper {
@@ -860,6 +901,10 @@ input[type=submit] {
 
 .product {
   margin-top: 100px; }
+  .product .price-text {
+    font-weight: bold;
+    font-family: 'novecentosanswide-normal-webfont';
+    font-size: 30px; }
   .product .shop-item {
     width: 100%;
     display: -ms-flexbox;
@@ -902,10 +947,12 @@ input[type=submit] {
   -ms-flex-direction: row;
       flex-direction: row;
   padding: 0 5%; }
+  .shopstuff .shop-stuff-item:hover {
+    border-top: 5px solid #d99054; }
   .shopstuff .shop-stuff-item {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
-    margin: 20px;
+    margin: 10px;
     border: 1px solid lightgray;
     border-top: 5px solid lightgray;
     display: -ms-flexbox;
@@ -915,17 +962,26 @@ input[type=submit] {
     -ms-flex-align: center;
         align-items: center; }
     .shopstuff .shop-stuff-item p {
-      margin: 0 10px; }
+      margin: 0 10px;
+      -ms-flex-preferred-size: 20%;
+          flex-basis: 20%;
+      text-align: center; }
     .shopstuff .shop-stuff-item .categ-button {
       background-color: #248A83;
       border: none;
-      margin: 15px; }
+      margin: 0;
+      -ms-flex-preferred-size: 20%;
+          flex-basis: 20%;
+      overflow: visible;
+      margin-top: 30px; }
       .shopstuff .shop-stuff-item .categ-button a {
         color: white; }
     .shopstuff .shop-stuff-item img {
       height: 90px;
       width: auto;
-      padding: 10px; }
+      padding: 10px;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; }
 
 .recent-posts {
   display: -ms-flexbox;
@@ -964,7 +1020,9 @@ input[type=submit] {
         height: 100%; }
 
 .home h2 {
-  font-size: 30px;
+  margin: 60px 0;
+  font-size: 38px;
+  color: #404040;
   text-align: center;
   text-transform: uppercase;
   font-family: 'novecentosanswide-normal-webfont'; }

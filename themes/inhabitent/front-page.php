@@ -24,8 +24,8 @@ get_header('home'); ?>
           <div class="product-icon-image">       
               <img src="<?php echo get_template_directory_uri();?>/images/product-type-icons/<?php echo $term->slug; ?>.svg" alt="">
           </div>
-          <p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
-          <button class="categ-button"><a href='<?php echo $url?>' class='button-link'><?php echo $term->name; ?> STUFF</a></button> 
+          <p><?php echo $term->description; ?></p>
+          <button class="categ-button"><a href='<?php echo $url?>' class='button-link'><?php echo $term->name; ?></a></button> 
 	</div>
                         
     <?php endforeach; ?>

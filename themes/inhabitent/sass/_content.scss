@@ -118,6 +118,18 @@ button:hover {
 	}
 }
 
+input {
+	background-color: #F4F4F4;
+}
+
+textarea {
+	background-color: #F4F4F4;
+}
+
+label {
+	text-transform: uppercase;
+}
+
 input[type=submit] {
 	border: none;
 	width: 100px;
@@ -128,6 +140,10 @@ input[type=submit] {
 	background-color: #248A83;
 	text-transform: uppercase;
 	font-size: 14px;	
+}
+
+input[type=submit]:hover {
+	background-color: #248A83;
 }
 
 .page-template-about {

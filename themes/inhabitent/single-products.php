@@ -17,6 +17,7 @@ get_header(); ?>
             </div>
             <div class="item-text">
                 <h2><?php the_title(); ?></h2>
+                <p class="price-text">$<?php echo CFS()->get('price');?></p>
                 <p><?php the_excerpt(); ?></p>
                 <button><i class="fa fa-facebook"></i><a href="http:/www.facebook.com"> Like</a></button>
                 <button><i class="fa fa-twitter"></i><a href="twitter.com">Tweet</a></button>
