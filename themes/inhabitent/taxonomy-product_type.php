@@ -10,28 +10,9 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		<?php if ( have_posts() ) : ?>
 		<div>
-			<?php
-			function product_archive_title($title) {
-			if(is_post_type_archive('products')) {
-				$title = 'Shop Stuff';
-			}
-				return $title;
-			}
-			add_filter('get_the_archive_title', 'product_archive_title');
-			the_archive_title( '<h1 class="shop-title">', '</h1>' );
-			the_archive_description( '<div class="taxonomy-description">', '</div>' );
-			?>
-			<ul class="shop-nav">
-				<?php    
-					$terms = get_terms( array(
-					'taxonomy' => 'product_type',
-					));
-					foreach ($terms as $term) :
-					$url = get_term_link( $term->slug , 'product_type');              
-				?>  
-				<li><a href='<?php echo $url?>' ><p class="shop-categor"><?php echo $term->slug; ?></p></a></li>
-    			<?php endforeach; ?>
-			</ul>
+		<?php $term = get_queried_object(); ?>
+			<h1 class="shop-title"><?php echo $term -> name; ?></h1>
+			<?php the_archive_description( '<div class="taxonomy-description">', '</div>' ); ?>
 		</div>
 			<ul class="shop-flex">
 			<?php /* Start the Loop */ ?>

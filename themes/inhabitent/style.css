@@ -856,21 +856,27 @@ input[type=submit]:hover {
   font-size: 38px;
   font-weight: bold; }
 
+.taxonomy-description p {
+  text-align: center; }
+
 .shop-nav {
   text-decoration: none;
   text-align: center;
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
-  border-bottom: 1px dashed #a1a1a1; }
+  border-bottom: 1px dashed lightgray; }
   .shop-nav li {
-    font-family: 'novecentosanswide-normal-webfont';
     text-transform: uppercase;
-    color: #808080;
     padding: 20px;
     padding-bottom: 40px;
     font-size: 18px;
     display: inline-block; }
+    .shop-nav li a {
+      color: #808080;
+      text-decoration: none; }
+      .shop-nav li a p {
+        font-family: 'novecentosanswide-normal-webfont'; }
 
 .shop-product {
   display: inline-block;

@@ -25,13 +25,11 @@ get_header('home'); ?>
               <img src="<?php echo get_template_directory_uri();?>/images/product-type-icons/<?php echo $term->slug; ?>.svg" alt="">
           </div>
           <p><?php echo $term->description; ?></p>
-          <a href='<?php echo $url?>' class='button-link'><?php echo $term->name; ?></a>
+          <a href='<?php echo $url?>' class='button-link'><?php echo $term->name; ?> Stuff</a>
 	</div>
                         
     <?php endforeach; ?>
 </div>
-
-
 		<h2>Inhabitent Journal</h2>
 		<div id="content" class="recent-posts">
 			<?php
@@ -51,6 +49,15 @@ get_header('home'); ?>
 
 		<h2>Latest Adventures</h2>
 		<div class="latest-adventures">
+			<div class="canoe-pic">
+			</div>
+			<div class="beach-pic">
+			</div>
+			<div class="mountain-pic">
+			</div>
+			<div class="night-pic">
+			<p>
+			</div>
 		</div>
 
 

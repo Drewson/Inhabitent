@@ -65,6 +65,14 @@ function inhabitent_about_img_css() {
 
 add_action( 'wp_enqueue_scripts', 'inhabitent_about_img_css' );
 
-
-
+function post_list( $query ){
+    if ( is_post_type_archive( 'products' )){
+        $query->set( 'posts_per_page', 16);
+        $query->set('orderby', 'title');
+        $query->set('post_type', 'products');
+        $query->set('order', 'ASC');
+        return;
+    }
+}
+add_action( 'pre_get_posts', 'post_list', 1);
 
