@@ -60,6 +60,10 @@
 	flex-wrap: wrap;
 }
 
+fieldset {
+    border: 30px solid black;
+}
+
 #primary {
 	flex-basis: 73%;
 	margin: 55px auto 0 auto;
@@ -84,6 +88,10 @@
 
 .single-post {
 	@include picture-text;
+	
+	button {
+		margin: 0;
+	}
 } 
 
 .blog {
@@ -148,6 +156,14 @@ input[type=submit]:hover {
 
 .page-template-about {
 	height: 100vh;
+}
+
+.comment-author-avatar{
+
+    img {
+        border-radius: 50%;
+    }
+    
 }
 
 

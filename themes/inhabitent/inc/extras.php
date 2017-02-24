@@ -76,3 +76,5 @@ function post_list( $query ){
 }
 add_action( 'pre_get_posts', 'post_list', 1);
 
+
+

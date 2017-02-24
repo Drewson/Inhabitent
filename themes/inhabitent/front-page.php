@@ -50,16 +50,25 @@ get_header('home'); ?>
 		<h2>Latest Adventures</h2>
 		<div class="latest-adventures">
 			<div class="canoe-pic">
+				<p>Getting Back to Nature in a Canoe</p>
+				<button><a href="<?php the_permalink(); ?> ">Read More &rarr;</a></button>
 			</div>
-			<div class="beach-pic">
-			</div>
-			<div class="mountain-pic">
-			</div>
-			<div class="night-pic">
-			<p>
+			<div class="three-pics">
+				<div class="beach-pic">
+					<p>A Night with Friends at the Beach</p>
+					<button><a href="<?php the_permalink(); ?> ">Read More &rarr;</a></button>
+				</div>
+				<div class="mountain-pic">
+					<p>Taking in the View at Big Mountain</p>
+					<button><a href="<?php the_permalink(); ?> ">Read More &rarr;</a></button>
+				</div>
+				<div class="night-pic">
+					<p>Star-Gazing at the Night Sky</p>
+					<button><a href="<?php the_permalink(); ?> ">Read More &rarr;</a></button>
+				</div>
 			</div>
 		</div>
-
+		<div class="btn-wrp"><button class="adv-btn">More Adventures</button></div>
 
 
 	</div>

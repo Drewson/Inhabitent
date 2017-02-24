@@ -115,4 +115,108 @@
     font-family: 'novecentosanswide-normal-webfont';
 }
 
+.canoe-pic:hover, .mountain-pic:hover, .night-pic :hover, .beach-pic :hover {
+    color: #d99054;
+}
+
+.latest-adventures {
+    width: 1120px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height: 450px;
+    color: white;
+    font-family: 'novecentosanswide-normal-webfont';
+
+    button {
+        background: rgba(0,0,0,0);
+        border: 1px solid white;
+        
+        a {
+            color: white;
+        }
+
+    }
+
+    .canoe-pic {
+        height: 100%;
+        width: 47%;
+        float: left;
+        background:linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
+         url("../../images/adventure-photos/canoe-girl.jpg"),
+        rgba(0,0,0,.35);
+        background-size: cover;
+        padding: 0 5%;
+        margin: 0 10px;
+
+        p {
+            font-size: 46px;
+        }
+    }
+
+    .three-pics {
+        height: 100%;
+        width: 50%;
+        float: right;
+
+        .beach-pic {
+            display: inline-block;
+            height: 48%;
+            width: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
+            url("../../images/adventure-photos/beach-bonfire.jpg");
+            background-size: 100%;
+            overflow: hidden;
+            padding: 0 10px;
+            margin-bottom: 15px;
+
+            p {
+                font-size: 36px;
+            }
+        }
+        .mountain-pic {
+            display: inline-block;
+            height: 47%;
+            width: 48%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
+            url("../../images/adventure-photos/mountain-hikers.jpg");
+            background-size: cover;
+            padding: 0 10px;
+            margin-right: 20px;
+
+            p {
+                font-size: 24px;
+            }
+        }
+        .night-pic {
+            display: inline-block;
+            float: right;
+            height: 47%;
+            width: 48%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
+            url("../../images/adventure-photos/night-sky.jpg");
+            background-size: contain;
+            padding: 0 10px;
+
+            p {
+                font-size: 24px;
+            }
+        }
+    }
+
+}
+
+.btn-wrp {
+    width: 1120px;
+    margin-left: 69px;
+    margin-bottom: 30px;
+}
+.adv-btn {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    background-color:#248A83;
+    font-family: 'novecentosanswide-normal-webfont';
+}
 

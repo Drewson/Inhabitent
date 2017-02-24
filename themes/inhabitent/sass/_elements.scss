@@ -73,3 +73,39 @@ table {
 h2 {
 	letter-spacing: 3px;
 }
+
+.error-404 {
+	
+	ul {
+		padding: 0;
+		margin: 0;
+	}
+
+	li {
+		list-style: none;
+		list-style-position: inside;
+		
+		a {
+			text-decoration: none;
+		}
+	}
+	
+	fieldset {
+		border: none;
+	}
+
+	select {
+		margin-bottom: 60px;
+	}
+
+	button {
+		display: none;
+	}
+
+	h1 {
+		font-family: 'novecentosanswide-demibold-webfont';
+		text-transform: uppercase;
+		font-size: 36px;
+		font-weight: bold;
+	}
+}

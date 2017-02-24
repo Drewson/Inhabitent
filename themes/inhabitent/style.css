@@ -386,6 +386,31 @@ table {
 h2 {
   letter-spacing: 3px; }
 
+.error-404 ul {
+  padding: 0;
+  margin: 0; }
+
+.error-404 li {
+  list-style: none;
+  list-style-position: inside; }
+  .error-404 li a {
+    text-decoration: none; }
+
+.error-404 fieldset {
+  border: none; }
+
+.error-404 select {
+  margin-bottom: 60px; }
+
+.error-404 button {
+  display: none; }
+
+.error-404 h1 {
+  font-family: 'novecentosanswide-demibold-webfont';
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -717,6 +742,9 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
+fieldset {
+  border: 30px solid black; }
+
 #primary {
   -ms-flex-preferred-size: 73%;
       flex-basis: 73%;
@@ -763,6 +791,9 @@ a {
     margin: 14px 0;
     background-color: #248A83;
     color: white; }
+
+.single-post button {
+  margin: 0; }
 
 .blog .entry-header {
   letter-spacing: .2rem;
@@ -839,6 +870,9 @@ input[type=submit]:hover {
 
 .page-template-about {
   height: 100vh; }
+
+.comment-author-avatar img {
+  border-radius: 50%; }
 
 .shop-flex {
   display: -ms-flexbox;
@@ -1038,6 +1072,81 @@ input[type=submit]:hover {
   color: #404040;
   text-align: center;
   text-transform: uppercase;
+  font-family: 'novecentosanswide-normal-webfont'; }
+
+.canoe-pic:hover, .mountain-pic:hover, .night-pic :hover, .beach-pic :hover {
+  color: #d99054; }
+
+.latest-adventures {
+  width: 1120px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  height: 450px;
+  color: white;
+  font-family: 'novecentosanswide-normal-webfont'; }
+  .latest-adventures button {
+    background: transparent;
+    border: 1px solid white; }
+    .latest-adventures button a {
+      color: white; }
+  .latest-adventures .canoe-pic {
+    height: 100%;
+    width: 47%;
+    float: left;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/adventure-photos/canoe-girl.jpg"), rgba(0, 0, 0, 0.35);
+    background-size: cover;
+    padding: 0 5%;
+    margin: 0 10px; }
+    .latest-adventures .canoe-pic p {
+      font-size: 46px; }
+  .latest-adventures .three-pics {
+    height: 100%;
+    width: 50%;
+    float: right; }
+    .latest-adventures .three-pics .beach-pic {
+      display: inline-block;
+      height: 48%;
+      width: 100%;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/adventure-photos/beach-bonfire.jpg");
+      background-size: 100%;
+      overflow: hidden;
+      padding: 0 10px;
+      margin-bottom: 15px; }
+      .latest-adventures .three-pics .beach-pic p {
+        font-size: 36px; }
+    .latest-adventures .three-pics .mountain-pic {
+      display: inline-block;
+      height: 47%;
+      width: 48%;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/adventure-photos/mountain-hikers.jpg");
+      background-size: cover;
+      padding: 0 10px;
+      margin-right: 20px; }
+      .latest-adventures .three-pics .mountain-pic p {
+        font-size: 24px; }
+    .latest-adventures .three-pics .night-pic {
+      display: inline-block;
+      float: right;
+      height: 47%;
+      width: 48%;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/adventure-photos/night-sky.jpg");
+      background-size: contain;
+      padding: 0 10px; }
+      .latest-adventures .three-pics .night-pic p {
+        font-size: 24px; }
+
+.btn-wrp {
+  width: 1120px;
+  margin-left: 69px;
+  margin-bottom: 30px; }
+
+.adv-btn {
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  border: none;
+  color: white;
+  background-color: #248A83;
   font-family: 'novecentosanswide-normal-webfont'; }
 
 .about-head {

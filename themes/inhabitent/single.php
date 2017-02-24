@@ -13,9 +13,9 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
-
-			<button type="button" id="close-comments">Close Comments</button>
-
+				<button><i class="fa fa-facebook"></i><a href="http:/www.facebook.com"> Like</a></button>
+                <button><i class="fa fa-twitter"></i><a href="twitter.com">Tweet</a></button>
+                <button><i class="fa fa-pinterest"></i><a href="pintrest.com">Pin</a></button>
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :
