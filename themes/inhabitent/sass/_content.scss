@@ -71,10 +71,11 @@ fieldset {
 	border-right: 1px solid $solid_border;
 
 	.entry-title{
+		font-family: $font_secondary;
 		text-transform: uppercase;
 
 		a:hover{
-			color: $color__link-hover;
+			color: #f0e4d1;
 		}
 	}
 

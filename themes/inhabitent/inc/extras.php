@@ -65,6 +65,8 @@ function inhabitent_about_img_css() {
 
 add_action( 'wp_enqueue_scripts', 'inhabitent_about_img_css' );
 
+
+//Ordering the product list, alphabetically, and increasing show count to 16
 function post_list( $query ){
     if ( is_post_type_archive( 'products' ) || is_tax() ){
         $query->set( 'posts_per_page', 16);

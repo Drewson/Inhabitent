@@ -6,6 +6,8 @@
  */
 
 get_header(); ?>
+
+<!--THE SHOP PAGE-->
 	<div>
 		<main id="main" class="site-main" role="main">
 		<?php if ( have_posts() ) : ?>

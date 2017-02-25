@@ -5,6 +5,8 @@
  * @package RED_Starter_Theme
  */
 
+//THIS IS THE JOURNAL PAGE
+
 get_header(); ?>
 <div id="content" class="site-content">
 	<div id="primary" class="content-area content">

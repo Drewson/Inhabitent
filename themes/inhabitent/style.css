@@ -808,9 +808,10 @@ fieldset {
   padding: 5% 5% 0 0;
   border-right: 1px solid 1px solid #e1e1e1; }
   #primary .entry-title {
+    font-family: "novecentosanswide";
     text-transform: uppercase; }
     #primary .entry-title a:hover {
-      color: #d99054; }
+      color: #f0e4d1; }
   #primary h2 {
     font-family: "novecentosanswide";
     font-weight: bold;
@@ -845,10 +846,13 @@ fieldset {
       text-decoration: none;
       text-transform: uppercase; }
   .single-post .entry-header .entry-meta {
+    font-family: "novecentosanswide";
     font-size: 14px;
+    text-transform: uppercase;
     position: absolute;
     right: 0;
     bottom: 0;
+    padding: 0 5px;
     margin: 14px 0;
     background-color: #248A83;
     color: white; }
@@ -880,10 +884,13 @@ fieldset {
       text-decoration: none;
       text-transform: uppercase; }
   .blog .entry-header .entry-meta {
+    font-family: "novecentosanswide";
     font-size: 14px;
+    text-transform: uppercase;
     position: absolute;
     right: 0;
     bottom: 0;
+    padding: 0 5px;
     margin: 14px 0;
     background-color: #248A83;
     color: white; }
@@ -912,10 +919,13 @@ fieldset {
       text-decoration: none;
       text-transform: uppercase; }
   .archive .entry-header .entry-meta {
+    font-family: "novecentosanswide";
     font-size: 14px;
+    text-transform: uppercase;
     position: absolute;
     right: 0;
     bottom: 0;
+    padding: 0 5px;
     margin: 14px 0;
     background-color: #248A83;
     color: white; }
@@ -1292,15 +1302,20 @@ ol {
     float: right; }
     .latest-adventures .three-pics .beach-pic {
       display: inline-block;
+      float: right;
       height: 48%;
       width: 100%;
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/adventure-photos/beach-bonfire.jpg");
+      background-position: center;
       background-size: 100%;
       overflow: hidden;
       padding: 0 10px;
       margin-bottom: 15px; }
       .latest-adventures .three-pics .beach-pic p {
         font-size: 36px; }
+      .latest-adventures .three-pics .beach-pic button {
+        position: relative;
+        bottom: 20px; }
     .latest-adventures .three-pics .mountain-pic {
       display: inline-block;
       height: 47%;

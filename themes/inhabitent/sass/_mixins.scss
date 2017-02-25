@@ -49,10 +49,13 @@
 		}
 
 		.entry-meta {
+			font-family: $font_secondary;
 			font-size: 14px;
+			text-transform: uppercase;
 			position: absolute;
 			right: 0;
 			bottom: 0;
+			padding: 0 5px;
 			margin: 14px 0;
 			background-color: #248A83;
 			color: white;

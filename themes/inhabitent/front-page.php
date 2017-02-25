@@ -7,6 +7,7 @@
 
 get_header('home'); ?>
 
+<!--THE FRONT PAGE-->
 	<div class="hero-banner">
 	</div>
 	<div class="front-page-content">

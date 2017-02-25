@@ -5,6 +5,8 @@
  * @package RED_Starter_Theme
  */
 
+ //THE HEADER FOR HOME AND ABOUT
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>

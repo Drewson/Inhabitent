@@ -1,6 +1,9 @@
 <?php /* Template Name: page-about */ ?>
 
 <?php get_header('home'); ?>
+
+<!--THE ABOUT PAGE, IS DYNAMIC-->
+
 	<main id="main" class="site-main page-about" role="main">
 		<header class="about-head">
 			<h1>About</h1>

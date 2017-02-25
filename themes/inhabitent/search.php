@@ -6,6 +6,9 @@
  */
 
 get_header(); ?>
+
+<!--THIS PAGE SHOWS AFTER SEARCHING IN THE HEADER-->
+
 <div id="content" class="site-content">
 	<div id="primary" class="content-area content">
 		<main id="main" class="site-main" role="main">
