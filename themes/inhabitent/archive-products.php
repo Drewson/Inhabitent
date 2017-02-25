@@ -11,8 +11,19 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 		<div>
 		<?php $term = get_queried_object(); ?>
-			<h1 class="shop-title"><?php echo $term -> name; ?></h1>
+			<h1 class="shop-title"><?php the_archive_title(); ?></h1>
 			<?php the_archive_description( '<div class="taxonomy-description">', '</div>' ); ?>
+			<ul class="shop-nav">
+				<?php    
+					$terms = get_terms( array(
+					'taxonomy' => 'product_type',
+					));
+					foreach ($terms as $term) :
+					$url = get_term_link( $term->slug , 'product_type');              
+				?>  
+				<li><a href='<?php echo $url?>' ><p class="shop-categor"><?php echo $term->slug; ?></p></a></li>
+    			<?php endforeach; ?>
+			</ul>
 		</div>
 			<ul class="shop-flex">
 			<?php /* Start the Loop */ ?>
@@ -25,7 +36,7 @@ get_header(); ?>
 					<p class="price-text"><?php the_title();?></p>
 					<p>$<?php echo CFS()->get('price');?></p>
 					</div>
-					</li>
+				</li>
 			<?php endwhile; ?>
 			</ul>
 			<?php the_posts_navigation(); ?>

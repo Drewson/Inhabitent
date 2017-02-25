@@ -108,12 +108,6 @@ function red_starter_scripts() {
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('red_comments', get_template_directory_uri() . '/js/main.js', array('jquery'), false, true );
 
-	//  wp_localize_script( 'red_comments', 'red_vars', array( //what are the first 2 params
-	//   'rest_url' => rest_url(),
-    //   'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
-    //   'post_id' => get_the_ID()
-  	// ) );
-
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -136,6 +130,8 @@ function inhabitent_remove_submenus() {
    remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
 }
 add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
+
+
 
 
 

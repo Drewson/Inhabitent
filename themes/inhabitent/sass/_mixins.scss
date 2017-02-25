@@ -59,3 +59,9 @@
 		}
 	} 
 }
+
+@mixin heading-style  {
+	font-family: 'novecentosanswide-demibold-webfont';
+	color: #d99054;
+	text-transform: uppercase;
+}

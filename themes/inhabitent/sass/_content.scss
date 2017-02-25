@@ -72,6 +72,10 @@ fieldset {
 
 	.entry-title{
 		text-transform: uppercase;
+
+		a:hover{
+			color: $color__link-hover;
+		}
 	}
 
 	h2 {
@@ -108,7 +112,7 @@ button {
 	width: 140px;
 	height: 40px;
 	padding: 5px;
-	margin: 0 20px 40px 20px;
+	margin: 0 20px 40px 0;
 	background-color: white;
 	text-transform: uppercase;
 	font-size: 14px;
@@ -209,6 +213,43 @@ ol {
 
 .comment-content {
 	display: inline-block;
+}
+
+
+.error-404 {
+	
+	ul {
+		padding: 0;
+		margin: 0;
+	}
+
+	li {
+		list-style: none;
+		list-style-position: inside;
+		
+		a {
+			text-decoration: none;
+		}
+	}
+	
+	fieldset {
+		border: none;
+	}
+
+	select {
+		margin-bottom: 60px;
+	}
+
+	button {
+		display: none;
+	}
+
+	h1 {
+		font-family: 'novecentosanswide-demibold-webfont';
+		text-transform: uppercase;
+		font-size: 36px;
+		font-weight: bold;
+	}
 }
 
 

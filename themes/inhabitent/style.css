@@ -335,12 +335,10 @@ html {
 *,
 *:before,
 *:after {
-  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
   box-sizing: inherit; }
 
 body {
-  background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
+  background: #fff; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -375,9 +373,7 @@ dd {
 
 img {
   height: auto;
-  /* Make sure images are scaled correctly. */
-  max-width: 100%;
-  /* Adhere to container width. */ }
+  max-width: 100%; }
 
 table {
   margin: 0 0 1.5rem;
@@ -392,30 +388,8 @@ h3 {
   font-size: 26px;
   font-weight: bold; }
 
-.error-404 ul {
-  padding: 0;
-  margin: 0; }
-
-.error-404 li {
-  list-style: none;
-  list-style-position: inside; }
-  .error-404 li a {
-    text-decoration: none; }
-
-.error-404 fieldset {
-  border: none; }
-
-.error-404 select {
-  margin-bottom: 60px; }
-
-.error-404 button {
-  display: none; }
-
-.error-404 h1 {
-  font-family: 'novecentosanswide-demibold-webfont';
-  text-transform: uppercase;
-  font-size: 36px;
-  font-weight: bold; }
+a:hover {
+  color: #d99054; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -574,55 +548,9 @@ a {
         text-transform: uppercase; }
       #masthead ul li a:hover {
         color: #d99054; }
-
-.search-form fieldset {
-  border: none;
-  padding: 0; }
-  .search-form fieldset button {
-    background-color: transparent;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    border: none;
-    width: auto;
-    outline: none; }
-  .search-form fieldset button:hover {
-    background-color: transparent;
-    border: none; }
-  .search-form fieldset button:focus {
-    border: none; }
-  .search-form fieldset .search-field {
-    color: #d99054;
-    outline: none;
-    border: none;
-    background: transparent;
-    transition: all 1s;
-    width: 0px;
-    text-transform: uppercase;
-    font-family: 'novecentosanswide-normal-webfont'; }
-  .search-form fieldset .search-width {
-    width: 170px; }
-  .search-form fieldset .search-field:focus {
-    border: none; }
-
-::-webkit-input-placeholder {
-  color: #f0e4d1; }
-
-::-moz-placeholder {
-  color: #f0e4d1; }
-
-:-ms-input-placeholder {
-  color: #f0e4d1; }
-
-::placeholder {
-  color: #f0e4d1; }
-
-a:hover {
-  color: #d99054; }
-
-i {
-  color: #808080;
-  padding: 10px; }
+  #masthead i {
+    color: #808080;
+    padding: 10px; }
 
 #masthead-home {
   padding: 0 5%;
@@ -631,6 +559,14 @@ i {
   z-index: +1;
   position: absolute;
   background: rgba(255, 255, 255, 0); }
+  #masthead-home ::-webkit-input-placeholder {
+    color: #f0e4d1; }
+  #masthead-home ::-moz-placeholder {
+    color: #f0e4d1; }
+  #masthead-home :-ms-input-placeholder {
+    color: #f0e4d1; }
+  #masthead-home ::placeholder {
+    color: #f0e4d1; }
   #masthead-home button {
     color: white; }
   #masthead-home .home-link {
@@ -653,9 +589,13 @@ i {
       padding: 10px; }
       #masthead-home ul li a {
         color: white;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        text-decoration: none; }
       #masthead-home ul li a:hover {
         color: #d99054; }
+  #masthead-home i {
+    color: white;
+    padding: 10px; }
 
 .search-form fieldset {
   border: none;
@@ -686,18 +626,6 @@ i {
     width: 170px; }
   .search-form fieldset .search-field:focus {
     border: none; }
-
-::-webkit-input-placeholder {
-  color: #f0e4d1; }
-
-::-moz-placeholder {
-  color: #f0e4d1; }
-
-:-ms-input-placeholder {
-  color: #f0e4d1; }
-
-::placeholder {
-  color: #f0e4d1; }
 
 #secondary {
   height: 100%;
@@ -868,6 +796,8 @@ fieldset {
   border-right: 1px solid #e1e1e1; }
   #primary .entry-title {
     text-transform: uppercase; }
+    #primary .entry-title a:hover {
+      color: #d99054; }
   #primary h2 {
     font-family: 'novecentosanswide-demibold-webfont';
     text-transform: uppercase;
@@ -982,7 +912,7 @@ button {
   width: 140px;
   height: 40px;
   padding: 5px;
-  margin: 0 20px 40px 20px;
+  margin: 0 20px 40px 0;
   background-color: white;
   text-transform: uppercase;
   font-size: 14px; }
@@ -1054,6 +984,31 @@ ol {
 
 .comment-content {
   display: inline-block; }
+
+.error-404 ul {
+  padding: 0;
+  margin: 0; }
+
+.error-404 li {
+  list-style: none;
+  list-style-position: inside; }
+  .error-404 li a {
+    text-decoration: none; }
+
+.error-404 fieldset {
+  border: none; }
+
+.error-404 select {
+  margin-bottom: 60px; }
+
+.error-404 button {
+  display: none; }
+
+.error-404 h1 {
+  font-family: 'novecentosanswide-demibold-webfont';
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold; }
 
 .shop-flex {
   display: -ms-flexbox;
@@ -1257,7 +1212,7 @@ ol {
       font-family: 'novecentosanswide-normal-webfont';
       position: absolute;
       bottom: -30px;
-      left: -10px; }
+      margin-left: 10px; }
     .recent-posts .recent-post .post-image {
       width: 100%;
       height: 60%;
@@ -1395,6 +1350,15 @@ ol {
   height: 512px;
   background-image: url(../../images/dark-wood@2x.png);
   background-size: 512px 512px; }
+  #colophon h3 {
+    font-family: 'novecentosanswide-demibold-webfont';
+    color: #d99054;
+    text-transform: uppercase; }
+  #colophon p {
+    margin: 3px;
+    font-family: 'novecentosanswide-normal-webfont'; }
+    #colophon p span {
+      font-family: 'novecentosanswide-demibold-webfont'; }
   #colophon .fa {
     font-size: 1.25rem;
     padding-right: 7px; }
@@ -1412,10 +1376,6 @@ ol {
       padding: 5%;
       -ms-flex-preferred-size: 27%;
           flex-basis: 27%; }
-      #colophon .site-info .contact-info h3 {
-        color: #d99054;
-        text-transform: uppercase;
-        font-family: 'novecentosanswide-demibold-webfont'; }
       #colophon .site-info .contact-info a {
         color: white;
         text-decoration: none;
@@ -1431,10 +1391,6 @@ ol {
           flex-basis: 30%; }
       #colophon .site-info .business-hours .day-of-week {
         padding: 7px; }
-      #colophon .site-info .business-hours h3 {
-        font-family: 'novecentosanswide-demibold-webfont';
-        color: #d99054;
-        text-transform: uppercase; }
   #colophon .inhab-logo-text {
     -ms-flex-preferred-size: 40%;
         flex-basis: 40%; }

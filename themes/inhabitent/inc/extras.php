@@ -66,7 +66,7 @@ function inhabitent_about_img_css() {
 add_action( 'wp_enqueue_scripts', 'inhabitent_about_img_css' );
 
 function post_list( $query ){
-    if ( is_post_type_archive( 'products' )){
+    if ( is_post_type_archive( 'products' ) || is_tax() ){
         $query->set( 'posts_per_page', 16);
         $query->set('orderby', 'title');
         $query->set('order', 'ASC');
@@ -74,6 +74,7 @@ function post_list( $query ){
     }
 }
 add_action( 'pre_get_posts', 'post_list', 1);
+add_action( '', 'post_list', 1);
 
 function product_archive_title($title) {
     if(is_post_type_archive('products')) {

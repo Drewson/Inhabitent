@@ -3,8 +3,20 @@
     height: 512px;
     background-image: url(../../images/dark-wood@2x.png);
     background-size: 512px 512px;
-    
 
+    h3 {
+        @include heading-style;
+    }
+
+    p {
+        margin: 3px;
+        font-family: 'novecentosanswide-normal-webfont';
+
+        span {
+            font-family: 'novecentosanswide-demibold-webfont';
+        }
+    }
+    
     .fa {
         font-size: 1.25rem;
         padding-right: 7px;
@@ -22,12 +34,6 @@
             padding: 5%;
             flex-basis: 27%;
 
-            h3 {
-                color: #d99054;
-                text-transform: uppercase;
-                font-family: 'novecentosanswide-demibold-webfont';
-            }
-
             a {
                 color: white;
                 text-decoration: none;
@@ -44,12 +50,6 @@
 
             .day-of-week {
                 padding: 7px;
-            }
-
-            h3 {
-                font-family: 'novecentosanswide-demibold-webfont';
-                color: #d99054;
-                text-transform: uppercase;   /////Mixin
             }
         }
     }
