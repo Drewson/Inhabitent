@@ -82,7 +82,7 @@
             text-transform: uppercase;
             font-family: 'novecentosanswide-demibold-webfont';
             color: #248A83;
-            font-size: 20px;
+            font-size: 22px;
             padding: 0 10px;
         }
 
@@ -106,17 +106,23 @@
     }
 }
 
-.home h2 {
-    margin: 60px 0;
-    font-size: 38px;
-    color: #404040;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'novecentosanswide-normal-webfont';
+.home{
+    a:hover {
+        color: #f0e4d1;
+    }
+
+    h2 {
+        margin: 60px 0;
+        font-size: 38px;
+        color: #404040;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'novecentosanswide-normal-webfont';
+    }
 }
 
 .canoe-pic:hover, .mountain-pic:hover, .night-pic :hover, .beach-pic :hover {
-    color: #d99054;
+    color: #f0e4d1;
 }
 
 .latest-adventures {
@@ -188,7 +194,6 @@
             }
         }
         .night-pic {
-            display: inline-block;
             float: right;
             height: 47%;
             width: 48%;
@@ -213,10 +218,21 @@
 .adv-btn {
     width: 200px;
     height: 50px;
+    margin-left: 20px;
     font-size: 16px;
     border: none;
     color: white;
     background-color:#248A83;
     font-family: 'novecentosanswide-normal-webfont';
+}
+
+#primary-menu {
+    li{
+        a:hover{
+            color: #f0e4d1;
+        }
+        
+    }
+    
 }
 

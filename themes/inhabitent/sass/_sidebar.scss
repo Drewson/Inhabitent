@@ -33,3 +33,19 @@
 .widget-title {
     font-size: 26px;
 }
+
+#archives-2 {
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+
+        li {
+            a {
+                text-decoration: none;
+            }      
+        }
+    }
+}

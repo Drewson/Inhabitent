@@ -1,45 +1,30 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * The main template file.
  *
  * @package RED_Starter_Theme
  */
 
 get_header(); ?>
-	<div>
+<div id="content" class="site-content">
+	<div id="primary" class="content-area content">
 		<main id="main" class="site-main" role="main">
+		<h1 class="search-title">Month: <?php echo get_the_date();?></h1>
 		<?php if ( have_posts() ) : ?>
-		<div>
-			<?php
-			the_archive_title( '<h1 class="shop-title">', '</h1>' );
-			the_archive_description( '<div class="taxonomy-description">', '</div>' );
-			?>
-			<ul class="shop-nav">
-				<?php    
-					$terms = get_terms( array(
-					'taxonomy' => 'product_type',
-					));
-					foreach ($terms as $term) :
-					$url = get_term_link( $term->slug , 'product_type');              
-				?>  
-				<li><a href='<?php echo $url?>' ><p class="shop-categor"><?php echo $term->slug; ?></p></a></li>
-    			<?php endforeach; ?>
-			</ul>
-		</div>
-			<ul class="shop-flex">
+
+			<?php if ( is_home() && ! is_front_page() ) : ?>
+				<header>
+					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+				</header>
+			<?php endif; ?>
+
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-				<li class="shop-product">
-					<div class="image-wrapper">
-						<a href="<?php the_permalink(); ?>" ><?php the_post_thumbnail( 'large' ); ?></a>
-					</div>
-					<div class="text-wrapper">
-						<p class="price-text"><?php the_title();?></p>
-						<p class="price-numb">$<?php echo CFS()->get('price');?></p>
-					</div>
-				</li>
+
+				<?php get_template_part( 'template-parts/content' ); ?>
+				<button><a href="<?php the_permalink(); ?> ">Read More &rarr;</a></button>
 			<?php endwhile; ?>
-			</ul>
+
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
@@ -51,4 +36,7 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+<?php get_sidebar(); ?>
+
+</div>
 <?php get_footer(); ?>

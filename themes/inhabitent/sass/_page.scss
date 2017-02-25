@@ -40,8 +40,18 @@
             text-align: center;
             text-transform: uppercase;
             font-family: 'novecentosanswide-demibold-webfont';
+        }
     }
 
+    #content {
+        padding: 5% 10%;
     }
     
+}
+
+.about {
+
+    p{
+        line-height: 1.75;
+    }
 }
