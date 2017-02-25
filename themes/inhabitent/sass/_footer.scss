@@ -6,14 +6,15 @@
 
     h3 {
         @include heading-style;
+        font-family: $font_secondary;
     }
 
     p {
         margin: 3px;
-        font-family: 'novecentosanswide-normal-webfont';
+        font-family: $font_secondary;
 
         span {
-            font-family: 'novecentosanswide-demibold-webfont';
+            font-family: $font_secondary;
         }
     }
     

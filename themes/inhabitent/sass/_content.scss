@@ -68,7 +68,7 @@ fieldset {
 	flex-basis: 73%;
 	margin: 55px auto 0 auto;
 	padding: 5% 5% 0 0;
-	border-right: 1px solid #e1e1e1;
+	border-right: 1px solid $solid_border;
 
 	.entry-title{
 		text-transform: uppercase;
@@ -79,7 +79,8 @@ fieldset {
 	}
 
 	h2 {
-		font-family: 'novecentosanswide-demibold-webfont';
+		font-family: $font_secondary;
+		font-weight: bold;
 		text-transform: uppercase;
 		font-size: 30px;
 		font-weight: bold;
@@ -98,6 +99,8 @@ fieldset {
 	}
 } 
 
+
+//journal page
 .blog {
 	@include picture-text;
 }
@@ -108,7 +111,7 @@ fieldset {
 
 button {
 	border: 1px solid black;
-	font-family: 'novecentosanswide-normal-webfont';
+	font-family: $font_secondary;
 	width: 140px;
 	height: 40px;
 	padding: 5px;
@@ -121,7 +124,7 @@ button {
 
 	a {
 		text-decoration: none;
-		font-family: 'novecentosanswide-normal-webfont';
+		font-family: $font_secondary;
 		color: black;
 	}
 }
@@ -180,7 +183,7 @@ ol {
 	article {
 		display: flex;
 		align-items: center;
-		border-bottom: 1px solid lightgray;
+		border-bottom: 1px solid $solid_border;
 		margin: 10px;
 		padding: 10px;
 
@@ -190,7 +193,8 @@ ol {
 
 		.fn {
 			font-style: normal;
-			font-family: 'novecentosanswide-demibold-webfont';
+			font-family: $font_secondary;
+			font-weight: bold;
 		}
 
 		.comment-metadata {
@@ -245,7 +249,8 @@ ol {
 	}
 
 	h1 {
-		font-family: 'novecentosanswide-demibold-webfont';
+		font-family: $font_secondary;
+		font-weight: bold;
 		text-transform: uppercase;
 		font-size: 36px;
 		font-weight: bold;

@@ -2,7 +2,8 @@
 
     .search-title {
         text-transform: uppercase;
-        font-family: 'novecentosanswide-demibold-webfont';
+        font-family: $font_secondary;
+        font-weight: bold;
         border-bottom: 1px solid #a1a1a1;
     }
 

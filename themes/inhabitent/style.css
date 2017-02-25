@@ -252,16 +252,16 @@ th {
   font-style: normal; }
 
 @font-face {
-  font-family: 'novecentosanswide-demibold-webfont';
+  font-family: 'novecentosanswide';
   src: url("../../fonts/novecentosanswide-demibold-webfont.eot");
-  src: url("../../fonts/novecentosanswide-demibold-webfont.woff2") format("woff2");
-  font-weight: normal;
+  src: url("../../fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../../fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../../fonts/novecentosanswide-demibold-webfont.svg") format("svg");
+  font-weight: bold;
   font-style: normal; }
 
 @font-face {
-  font-family: 'novecentosanswide-normal-webfont';
+  font-family: 'novecentosanswide';
   src: url("../../fonts/novecentosanswide-normal-webfont.eot");
-  src: url("../../fonts/novecentosanswide-normal-webfont.woff2") format("woff2");
+  src: url("../../fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../../fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../../fonts/novecentosanswide-normal-webfont.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -383,7 +383,8 @@ h2 {
   letter-spacing: 3px; }
 
 h3 {
-  font-family: 'novecentosanswide-demibold-webfont';
+  font-family: "novecentosanswide";
+  font-weight: bold;
   text-transform: uppercase;
   font-size: 26px;
   font-weight: bold; }
@@ -519,11 +520,11 @@ a {
 
 /* New CSS */
 #masthead {
-  font-family: 'novecentosanswide-normal-webfont';
+  font-family: "novecentosanswide";
   width: 100%;
   position: fixed;
   top: 0;
-  border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid 1px solid #e1e1e1;
   z-index: +1;
   background: rgba(255, 255, 255, 0.8); }
   #masthead button {
@@ -557,7 +558,7 @@ a {
 
 #masthead-home {
   padding: 0 5%;
-  font-family: 'novecentosanswide-normal-webfont';
+  font-family: "novecentosanswide";
   width: 100%;
   z-index: +1;
   position: absolute;
@@ -624,7 +625,7 @@ a {
     transition: all 1s;
     width: 0px;
     text-transform: uppercase;
-    font-family: 'novecentosanswide-normal-webfont'; }
+    font-family: "novecentosanswide"; }
   .search-form fieldset .search-width {
     width: 180px; }
   .search-form fieldset .search-field:focus {
@@ -639,15 +640,15 @@ a {
   color: #2f1339;
   line-height: 1.75rem; }
   #secondary h2 {
-    font-family: 'novecentosanswide-demibold-webfont'; }
+    font-family: "novecentosanswide";
+    font-weight: bold; }
   #secondary i {
     width: 30px; }
   #secondary a {
     color: #a1a1a1; }
 
 .day-of-week {
-  font-family: 'merriweatherbold';
-  font-weight: 900; }
+  font-family: "merriweatherlight"; }
 
 .widget p {
   margin: 10px 0; }
@@ -665,7 +666,8 @@ a {
 
 .search .search-title {
   text-transform: uppercase;
-  font-family: 'novecentosanswide-demibold-webfont';
+  font-family: "novecentosanswide";
+  font-weight: bold;
   border-bottom: 1px solid #a1a1a1; }
 
 .search h1 {
@@ -804,13 +806,14 @@ fieldset {
       flex-basis: 73%;
   margin: 55px auto 0 auto;
   padding: 5% 5% 0 0;
-  border-right: 1px solid #e1e1e1; }
+  border-right: 1px solid 1px solid #e1e1e1; }
   #primary .entry-title {
     text-transform: uppercase; }
     #primary .entry-title a:hover {
       color: #d99054; }
   #primary h2 {
-    font-family: 'novecentosanswide-demibold-webfont';
+    font-family: "novecentosanswide";
+    font-weight: bold;
     text-transform: uppercase;
     font-size: 30px;
     font-weight: bold; }
@@ -919,7 +922,7 @@ fieldset {
 
 button {
   border: 1px solid black;
-  font-family: 'novecentosanswide-normal-webfont';
+  font-family: "novecentosanswide";
   width: 140px;
   height: 40px;
   padding: 5px;
@@ -929,7 +932,7 @@ button {
   font-size: 14px; }
   button a {
     text-decoration: none;
-    font-family: 'novecentosanswide-normal-webfont';
+    font-family: "novecentosanswide";
     color: black; }
 
 button:hover {
@@ -975,14 +978,15 @@ ol {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid 1px solid #e1e1e1;
   margin: 10px;
   padding: 10px; }
   .comment-list article a {
     text-decoration: none; }
   .comment-list article .fn {
     font-style: normal;
-    font-family: 'novecentosanswide-demibold-webfont'; }
+    font-family: "novecentosanswide";
+    font-weight: bold; }
   .comment-list article .comment-metadata {
     color: #248A83; }
 
@@ -1016,7 +1020,8 @@ ol {
   display: none; }
 
 .error-404 h1 {
-  font-family: 'novecentosanswide-demibold-webfont';
+  font-family: "novecentosanswide";
+  font-weight: bold;
   text-transform: uppercase;
   font-size: 36px;
   font-weight: bold; }
@@ -1032,7 +1037,8 @@ ol {
   display: block;
   text-align: center;
   margin-top: 100px;
-  font-family: 'novecentosanswide-demibold-webfont';
+  font-family: "novecentosanswide";
+  font-weight: bold;
   text-transform: uppercase;
   font-size: 38px;
   font-weight: bold; }
@@ -1046,7 +1052,7 @@ ol {
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
-  border-bottom: 1px dashed lightgray; }
+  border-bottom: 1px dashed 1px dashed #c8c8c8; }
   .shop-nav li {
     text-transform: uppercase;
     padding: 20px;
@@ -1057,7 +1063,7 @@ ol {
       color: #808080;
       text-decoration: none; }
       .shop-nav li a p {
-        font-family: 'novecentosanswide-normal-webfont'; }
+        font-family: "novecentosanswide"; }
 
 .shop-product {
   display: inline-block;
@@ -1094,7 +1100,7 @@ ol {
       position: absolute;
       left: 50%;
       top: 50%;
-      border-bottom: 5px inset lightgray;
+      border-bottom: 5px inset 1px solid #e1e1e1;
       max-height: 250px;
       max-width: none;
       width: auto;
@@ -1104,7 +1110,7 @@ ol {
   margin-top: 100px; }
   .product .price-text {
     font-weight: bold;
-    font-family: 'novecentosanswide-normal-webfont';
+    font-family: "novecentosanswide";
     font-size: 30px; }
   .product .shop-item {
     width: 100%;
@@ -1125,7 +1131,8 @@ ol {
         font-size: 34px;
         color: #d99054;
         text-transform: uppercase;
-        font-family: 'novecentosanswide-demibold-webfont';
+        font-family: "merriweatherlight";
+        font-weight: bold;
         margin: 0; }
       .product .shop-item .item-text button {
         margin: 0;
@@ -1136,7 +1143,7 @@ ol {
 #primary-taxonomy {
   -ms-flex-preferred-size: 73%;
       flex-basis: 73%;
-  border-right: 1px solid lightgray; }
+  border-right: 1px solid 1px solid #e1e1e1; }
 
 .archive #primary {
   padding-top: 0; }
@@ -1144,7 +1151,8 @@ ol {
 .archive .search-title {
   text-transform: uppercase;
   border-bottom: 1px solid #e1e1e1;
-  font-family: 'novecentosanswide-demibold-webfont';
+  font-family: "novecentosanswide";
+  font-weight: bold;
   font-size: 38px;
   margin-bottom: 50px; }
 
@@ -1169,8 +1177,8 @@ ol {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
     margin: 10px;
-    border: 1px solid lightgray;
-    border-top: 5px solid lightgray;
+    border: 1px solid 1px solid #e1e1e1;
+    border-top: 5px solid 1px solid #e1e1e1;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -1186,7 +1194,7 @@ ol {
       text-decoration: none;
       font-size: 14px;
       text-transform: uppercase;
-      font-family: 'novecentosanswide-normal-webfont';
+      font-family: "novecentosanswide";
       padding: 10px 0;
       text-align: center;
       width: 120px;
@@ -1215,7 +1223,7 @@ ol {
   .recent-posts .recent-post {
     position: relative;
     margin: 15px;
-    border: 1px solid #a1a1a1;
+    border: 1px solid 1px solid #e1e1e1;
     width: 400px;
     height: 400px; }
     .recent-posts .recent-post .post-text {
@@ -1225,12 +1233,12 @@ ol {
     .recent-posts .recent-post .post-title {
       width: 100%;
       text-transform: uppercase;
-      font-family: 'novecentosanswide-demibold-webfont';
+      font-family: "novecentosanswide";
       color: #248A83;
       font-size: 22px;
       padding: 0 10px; }
     .recent-posts .recent-post button {
-      font-family: 'novecentosanswide-normal-webfont';
+      font-family: "novecentosanswide";
       position: absolute;
       bottom: -30px;
       margin-left: 10px; }
@@ -1238,7 +1246,7 @@ ol {
       width: 100%;
       height: 60%;
       overflow: hidden;
-      border-bottom: 5px inset lightgray; }
+      border-bottom: 5px inset 1px solid #e1e1e1; }
       .recent-posts .recent-post .post-image img {
         height: 100%; }
 
@@ -1251,7 +1259,7 @@ ol {
   color: #404040;
   text-align: center;
   text-transform: uppercase;
-  font-family: 'novecentosanswide-normal-webfont'; }
+  font-family: "novecentosanswide"; }
 
 .canoe-pic:hover, .mountain-pic:hover, .night-pic :hover, .beach-pic :hover {
   color: #f0e4d1; }
@@ -1262,7 +1270,7 @@ ol {
   margin-bottom: 20px;
   height: 450px;
   color: white;
-  font-family: 'novecentosanswide-normal-webfont'; }
+  font-family: "novecentosanswide"; }
   .latest-adventures button {
     background: transparent;
     border: 1px solid white; }
@@ -1326,7 +1334,7 @@ ol {
   border: none;
   color: white;
   background-color: #248A83;
-  font-family: 'novecentosanswide-normal-webfont'; }
+  font-family: "novecentosanswide"; }
 
 #primary-menu li a:hover {
   color: #f0e4d1; }
@@ -1347,7 +1355,8 @@ ol {
     text-transform: uppercase;
     font-size: 46px;
     color: white;
-    font-family: 'novecentosanswide-demibold-webfont'; }
+    font-family: "novecentosanswide";
+    font-weight: bold; }
 
 .page-about .entry-content {
   margin: 5% 15%; }
@@ -1356,7 +1365,8 @@ ol {
   font-size: 34px;
   text-align: center;
   text-transform: uppercase;
-  font-family: 'novecentosanswide-demibold-webfont'; }
+  font-family: "novecentosanswide";
+  font-weight: bold; }
 
 .page-about .entry-header {
   display: -ms-flexbox;
@@ -1371,13 +1381,11 @@ ol {
     font-size: 44px;
     text-align: center;
     text-transform: uppercase;
-    font-family: 'novecentosanswide-demibold-webfont'; }
+    font-family: "novecentosanswide";
+    font-weight: bold; }
 
 .page-about #content {
   padding: 5% 10%; }
-
-.about p {
-  line-height: 1.75; }
 
 #colophon {
   height: 512px;
@@ -1386,12 +1394,13 @@ ol {
   #colophon h3 {
     font-family: 'novecentosanswide-demibold-webfont';
     color: #d99054;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: "novecentosanswide"; }
   #colophon p {
     margin: 3px;
-    font-family: 'novecentosanswide-normal-webfont'; }
+    font-family: "novecentosanswide"; }
     #colophon p span {
-      font-family: 'novecentosanswide-demibold-webfont'; }
+      font-family: "novecentosanswide"; }
   #colophon .fa {
     font-size: 1.25rem;
     padding-right: 7px; }

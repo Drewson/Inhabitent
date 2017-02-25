@@ -118,11 +118,11 @@ a {
 /* New CSS */
 
 #masthead {
-	font-family: 'novecentosanswide-normal-webfont';
+	font-family: $font_secondary;
 	width: 100%;
 	position: fixed;
 	top: 0;
-	border-bottom: 1px solid #e1e1e1;
+	border-bottom: 1px solid $solid_border;
 	z-index: +1;
 	background: rgba(255, 255, 255, .8 );
 
@@ -175,7 +175,7 @@ a {
 
 #masthead-home {
 	padding: 0 5%;
-	font-family: 'novecentosanswide-normal-webfont';
+	font-family: $font_secondary;
 	width: 100%;
 	z-index: +1;
 	position: absolute;
@@ -264,7 +264,7 @@ a {
 			transition: all 1s;
 			width: 0px;
 			text-transform: uppercase;
-			font-family: 'novecentosanswide-normal-webfont';
+			font-family: $font_secondary;
 
 		}
 

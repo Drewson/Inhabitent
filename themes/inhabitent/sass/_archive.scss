@@ -1,3 +1,7 @@
+//This page is for the archive pages (the sidebar links!), and the Shop page (archive-products)
+
+
+
 .shop-flex {
     display: flex;
     width: 100%;
@@ -8,7 +12,8 @@
     display: block;
     text-align: center;
     margin-top: 100px;
-    font-family: 'novecentosanswide-demibold-webfont';
+    font-family: $font_secondary;
+    font-weight: bold;
 	text-transform: uppercase;
 	font-size: 38px;
 	font-weight: bold;
@@ -26,7 +31,7 @@
     margin: 0;
     margin-bottom: 30px;
     padding: 0;
-    border-bottom: 1px dashed lightgray;
+    border-bottom: 1px dashed $dashed_border;
     
     li {
         text-transform: uppercase;
@@ -40,12 +45,14 @@
             text-decoration: none;
 
             p {
-                font-family: 'novecentosanswide-normal-webfont';
+                font-family: $font_secondary;
             }
         }
     }
 }
 
+
+//The individual Shop products
 .shop-product{
     display: inline-block;
     flex-basis: 20%;
@@ -66,11 +73,11 @@
             white-space: nowrap;
         }
 
+        //The '...'s between item name and price
         .price-text:after{
             content: '................................';
             display: inline;
             overflow: hidden;
-
         }
 
         p {
@@ -79,7 +86,6 @@
         }
 
         .price-numb {
-            // position: relative;
             z-index: 1;
         }
     }
@@ -93,7 +99,7 @@
             position: absolute;
             left: 50%;
             top: 50%;
-            border-bottom: 5px inset lightgray;
+            border-bottom: 5px inset $solid_border;
             max-height: 250px;
             max-width: none;
             width: auto;
@@ -109,7 +115,7 @@
 
     .price-text {
         font-weight: bold;
-        font-family: 'novecentosanswide-normal-webfont';
+        font-family: $font_secondary;
         font-size: 30px;
     }
 
@@ -130,9 +136,10 @@
 
             h2 {
                 font-size: 34px;
-                color: #d99054;
+                color: $color__link-hover;
                 text-transform: uppercase;
-                font-family: 'novecentosanswide-demibold-webfont';
+                font-family: $font__main;
+                font-weight: bold;
                 margin: 0;
             }
 
@@ -150,7 +157,7 @@
 
 #primary-taxonomy {
     flex-basis: 73%;
-    border-right: 1px solid lightgray;
+    border-right: 1px solid $solid_border;
 }
 
 .archive {
@@ -162,7 +169,8 @@
     .search-title {
         text-transform: uppercase;
         border-bottom: $solid-border;
-        font-family: 'novecentosanswide-demibold-webfont';
+        font-family: $font_secondary;
+        font-weight: bold;
         font-size: 38px;
         margin-bottom: 50px;
     }

@@ -7,7 +7,8 @@
     line-height: 1.75rem;
 
     h2 {
-        font-family: 'novecentosanswide-demibold-webfont';
+        font-family: $font_secondary;
+        font-weight: bold;
     }
 
     i {
@@ -20,8 +21,7 @@
 }
 
 .day-of-week {
-    font-family: 'merriweatherbold';
-    font-weight: 900;
+    font-family: $font__main;
 }
 
 .widget {
