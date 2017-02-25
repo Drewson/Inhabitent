@@ -34,7 +34,7 @@ function wp_admin_logo() {
 add_action('login_head', 'wp_admin_logo');
 
 function admin_logo_url( $url ) {
-    return get_bloginfo( 'url' );
+    return  esc_url( home_url() );
 }
 add_filter( 'login_headerurl', 'admin_logo_url' );
 

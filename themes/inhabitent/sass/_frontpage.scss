@@ -5,6 +5,14 @@
     background-size: auto, cover, cover;
 }
 
+.front-page-content {
+    
+    h2 {
+        font-family: $font_secondary;
+        font-weight: normal;
+    }
+}
+
 .shopstuff {
     display: flex;
     height: 300px;
@@ -81,9 +89,10 @@
             width: 100%;
             text-transform: uppercase;
             font-family: $font_secondary;
+            font-weight: bold;
             color: #248A83;
-            font-size: 22px;
-            padding: 0 10px;
+            font-size: 20px;
+            padding: 0 15px;
         }
 
         button {
@@ -152,11 +161,11 @@
          url("../../images/adventure-photos/canoe-girl.jpg"),
         rgba(0,0,0,.35);
         background-size: cover;
-        padding: 0 5%;
+        padding: 0 3%;
         margin: 0 10px;
 
         p {
-            font-size: 46px;
+            font-size: 48px;
         }
     }
 
@@ -176,15 +185,15 @@
             background-size: 100%;
             overflow: hidden;
             padding: 0 10px;
-            margin-bottom: 15px;
+            margin-bottom: 22px;
 
             p {
-                font-size: 36px;
+                font-size: 38px;
             }
 
             button {
                 position: relative;
-                bottom: 20px;
+                bottom: 25px;
             }
         }
         .mountain-pic {
@@ -224,10 +233,10 @@
     margin-bottom: 30px;
 }
 .adv-btn {
-    width: 200px;
+    width: 220px;
     height: 50px;
     margin-left: 20px;
-    font-size: 16px;
+    font-size: 19px;
     border: none;
     color: white;
     background-color:#248A83;

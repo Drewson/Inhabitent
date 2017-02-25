@@ -641,7 +641,9 @@ a {
   line-height: 1.75rem; }
   #secondary h2 {
     font-family: "novecentosanswide";
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase; }
   #secondary i {
     width: 30px; }
   #secondary a {
@@ -842,12 +844,13 @@ fieldset {
     font-size: 32px !important; }
     .single-post .entry-header .entry-title a {
       color: white;
-      font-size: 36px;
+      font-size: 33px;
       text-decoration: none;
       text-transform: uppercase; }
   .single-post .entry-header .entry-meta {
     font-family: "novecentosanswide";
-    font-size: 14px;
+    font-size: 16px;
+    letter-spacing: normal;
     text-transform: uppercase;
     position: absolute;
     right: 0;
@@ -880,12 +883,13 @@ fieldset {
     font-size: 32px !important; }
     .blog .entry-header .entry-title a {
       color: white;
-      font-size: 36px;
+      font-size: 33px;
       text-decoration: none;
       text-transform: uppercase; }
   .blog .entry-header .entry-meta {
     font-family: "novecentosanswide";
-    font-size: 14px;
+    font-size: 16px;
+    letter-spacing: normal;
     text-transform: uppercase;
     position: absolute;
     right: 0;
@@ -915,12 +919,13 @@ fieldset {
     font-size: 32px !important; }
     .archive .entry-header .entry-title a {
       color: white;
-      font-size: 36px;
+      font-size: 33px;
       text-decoration: none;
       text-transform: uppercase; }
   .archive .entry-header .entry-meta {
     font-family: "novecentosanswide";
-    font-size: 14px;
+    font-size: 16px;
+    letter-spacing: normal;
     text-transform: uppercase;
     position: absolute;
     right: 0;
@@ -999,6 +1004,8 @@ ol {
     font-weight: bold; }
   .comment-list article .comment-metadata {
     color: #248A83; }
+  .comment-list article .fn {
+    font-family: 'merriweatherbold'; }
 
 .comment-author-avatar {
   display: inline-block;
@@ -1010,26 +1017,26 @@ ol {
 .comment-content {
   display: inline-block; }
 
-.error-404 ul {
+.error404 ul {
   padding: 0;
   margin: 0; }
 
-.error-404 li {
+.error404 li {
   list-style: none;
   list-style-position: inside; }
-  .error-404 li a {
+  .error404 li a {
     text-decoration: none; }
 
-.error-404 fieldset {
+.error404 fieldset {
   border: none; }
 
-.error-404 select {
+.error404 select {
   margin-bottom: 60px; }
 
-.error-404 button {
+.error404 button {
   display: none; }
 
-.error-404 h1 {
+.error404 h1 {
   font-family: "novecentosanswide";
   font-weight: bold;
   text-transform: uppercase;
@@ -1047,6 +1054,7 @@ ol {
   display: block;
   text-align: center;
   margin-top: 100px;
+  margin-bottom: 0;
   font-family: "novecentosanswide";
   font-weight: bold;
   text-transform: uppercase;
@@ -1065,15 +1073,16 @@ ol {
   border-bottom: 1px dashed 1px dashed #c8c8c8; }
   .shop-nav li {
     text-transform: uppercase;
-    padding: 20px;
-    padding-bottom: 40px;
-    font-size: 18px;
+    padding: 0 25px 25px 25px;
+    font-size: 19px;
     display: inline-block; }
     .shop-nav li a {
       color: #808080;
       text-decoration: none; }
       .shop-nav li a p {
         font-family: "novecentosanswide"; }
+    .shop-nav li a:hover {
+      color: #2f1339; }
 
 .shop-product {
   display: inline-block;
@@ -1100,21 +1109,17 @@ ol {
     .shop-product .text-wrapper p {
       display: inline-block;
       margin: 0; }
-    .shop-product .text-wrapper .price-numb {
-      z-index: 1; }
   .shop-product .image-wrapper {
     position: relative;
     height: 250px;
     overflow: hidden; }
     .shop-product .image-wrapper img {
       position: absolute;
-      left: 50%;
-      top: 50%;
+      left: -30%;
       border-bottom: 5px inset 1px solid #e1e1e1;
       max-height: 250px;
       max-width: none;
-      width: auto;
-      transform: translate(-50%, -52%); }
+      width: auto; }
 
 .product {
   margin-top: 100px; }
@@ -1137,13 +1142,19 @@ ol {
       padding: 0 40px;
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%; }
+      .product .shop-item .item-text p {
+        font-size: 16px;
+        line-height: 28px; }
       .product .shop-item .item-text h2 {
-        font-size: 34px;
+        font-size: 38px;
         color: #d99054;
         text-transform: uppercase;
-        font-family: "merriweatherlight";
+        font-family: "novecentosanswide";
         font-weight: bold;
         margin: 0; }
+      .product .shop-item .item-text .price-text {
+        font-size: 28px;
+        font-weight: normal; }
       .product .shop-item .item-text button {
         margin: 0;
         width: 100px; }
@@ -1170,6 +1181,10 @@ ol {
   height: 800px;
   background: url("../../images/logos/inhabitent-logo-full.svg") center center no-repeat, linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg);
   background-size: auto, cover, cover; }
+
+.front-page-content h2 {
+  font-family: "novecentosanswide";
+  font-weight: normal; }
 
 .shopstuff {
   display: -ms-flexbox;
@@ -1244,9 +1259,10 @@ ol {
       width: 100%;
       text-transform: uppercase;
       font-family: "novecentosanswide";
+      font-weight: bold;
       color: #248A83;
-      font-size: 22px;
-      padding: 0 10px; }
+      font-size: 20px;
+      padding: 0 15px; }
     .recent-posts .recent-post button {
       font-family: "novecentosanswide";
       position: absolute;
@@ -1292,10 +1308,10 @@ ol {
     float: left;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/adventure-photos/canoe-girl.jpg"), rgba(0, 0, 0, 0.35);
     background-size: cover;
-    padding: 0 5%;
+    padding: 0 3%;
     margin: 0 10px; }
     .latest-adventures .canoe-pic p {
-      font-size: 46px; }
+      font-size: 48px; }
   .latest-adventures .three-pics {
     height: 100%;
     width: 50%;
@@ -1310,12 +1326,12 @@ ol {
       background-size: 100%;
       overflow: hidden;
       padding: 0 10px;
-      margin-bottom: 15px; }
+      margin-bottom: 22px; }
       .latest-adventures .three-pics .beach-pic p {
-        font-size: 36px; }
+        font-size: 38px; }
       .latest-adventures .three-pics .beach-pic button {
         position: relative;
-        bottom: 20px; }
+        bottom: 25px; }
     .latest-adventures .three-pics .mountain-pic {
       display: inline-block;
       height: 47%;
@@ -1342,10 +1358,10 @@ ol {
   margin-bottom: 30px; }
 
 .adv-btn {
-  width: 200px;
+  width: 220px;
   height: 50px;
   margin-left: 20px;
-  font-size: 16px;
+  font-size: 19px;
   border: none;
   color: white;
   background-color: #248A83;
@@ -1401,6 +1417,14 @@ ol {
 
 .page-about #content {
   padding: 5% 10%; }
+
+.cat-links, .tags-links {
+  text-transform: uppercase;
+  font-family: "novecentosanswide"; }
+  .cat-links a, .tags-links a {
+    padding-right: 15px;
+    color: #808080;
+    text-decoration: none; }
 
 #colophon {
   height: 512px;

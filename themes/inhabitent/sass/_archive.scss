@@ -12,6 +12,7 @@
     display: block;
     text-align: center;
     margin-top: 100px;
+    margin-bottom: 0;
     font-family: $font_secondary;
     font-weight: bold;
 	text-transform: uppercase;
@@ -35,9 +36,8 @@
     
     li {
         text-transform: uppercase;
-        padding: 20px;
-        padding-bottom: 40px;
-        font-size: 18px;
+        padding: 0 25px 25px 25px;
+        font-size: 19px;
         display: inline-block;
 
         a {
@@ -47,6 +47,10 @@
             p {
                 font-family: $font_secondary;
             }
+        }
+
+        a:hover {
+            color: #2f1339;
         }
     }
 }
@@ -85,9 +89,7 @@
             margin: 0;
         }
 
-        .price-numb {
-            z-index: 1;
-        }
+        
     }
 
     .image-wrapper {
@@ -97,13 +99,12 @@
 
         img {
             position: absolute;
-            left: 50%;
-            top: 50%;
+            left: -30%;
             border-bottom: 5px inset $solid_border;
             max-height: 250px;
             max-width: none;
             width: auto;
-            transform: translate(-50%,-52%);
+            // transform: translate(-50%,-52%);
         }
     }
     
@@ -134,13 +135,23 @@
             padding: 0 40px;
             flex-basis: 50%;
 
+            p {
+                font-size: 16px;
+                line-height: 28px;
+            }
+
             h2 {
-                font-size: 34px;
+                font-size: 38px;
                 color: $color__link-hover;
                 text-transform: uppercase;
-                font-family: $font__main;
+                font-family: $font_secondary;
                 font-weight: bold;
                 margin: 0;
+            }
+
+            .price-text {
+                font-size: 28px;
+                font-weight: normal;
             }
 
             button {

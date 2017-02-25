@@ -14,8 +14,8 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 				<button><i class="fa fa-facebook"></i><a href="http:/www.facebook.com"> Like</a></button>
-                <button><i class="fa fa-twitter"></i><a href="twitter.com">Tweet</a></button>
-                <button><i class="fa fa-pinterest"></i><a href="pintrest.com">Pin</a></button>
+                <button><i class="fa fa-twitter"></i><a href="http:/www.twitter.com">Tweet</a></button>
+                <button><i class="fa fa-pinterest"></i><a href="http:/www.pintrest.com">Pin</a></button>
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :

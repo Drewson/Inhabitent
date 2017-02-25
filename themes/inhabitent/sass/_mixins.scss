@@ -42,7 +42,7 @@
 
 			a {
 				color: white;
-				font-size: 36px;
+				font-size: 33px;
 				text-decoration: none;
 				text-transform: uppercase;
 			}
@@ -50,7 +50,8 @@
 
 		.entry-meta {
 			font-family: $font_secondary;
-			font-size: 14px;
+			font-size: 16px;
+			letter-spacing: normal;
 			text-transform: uppercase;
 			position: absolute;
 			right: 0;
@@ -67,4 +68,17 @@
 	font-family: 'novecentosanswide-demibold-webfont';
 	color: #d99054;
 	text-transform: uppercase;
+}
+
+
+//for the tags and category text on journal posts
+@mixin tags-categs {
+    text-transform: uppercase;
+    font-family: $font_secondary;
+
+    a {
+        padding-right: 15px;
+        color: #808080;
+        text-decoration: none;
+    }
 }

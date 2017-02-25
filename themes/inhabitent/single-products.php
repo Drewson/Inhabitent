@@ -20,8 +20,8 @@ get_header(); ?>
                 <p class="price-text">$<?php echo CFS()->get('price');?></p>
                 <p><?php the_excerpt(); ?></p>
                 <button><i class="fa fa-facebook"></i><a href="http:/www.facebook.com"> Like</a></button>
-                <button><i class="fa fa-twitter"></i><a href="twitter.com">Tweet</a></button>
-                <button><i class="fa fa-pinterest"></i><a href="pintrest.com">Pin</a></button>
+                <button><i class="fa fa-twitter"></i><a href="http:/www.twitter.com">Tweet</a></button>
+                <button><i class="fa fa-pinterest"></i><a href="http:/www.pintrest.com">Pin</a></button>
             </div>
         </div>
 
