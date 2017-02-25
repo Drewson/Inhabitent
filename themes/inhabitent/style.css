@@ -459,7 +459,7 @@ a {
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
-    color: #2f1339; }
+    color: #d99054; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -509,12 +509,6 @@ a {
           left: 100%; }
       .main-navigation ul ul a {
         width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
 
 /* Small menu. */
 .menu-toggle,
@@ -555,6 +549,8 @@ a {
   border-bottom: 1px solid #e1e1e1;
   z-index: +1;
   background: rgba(255, 255, 255, 0.8); }
+  #masthead button {
+    color: #808080; }
   #masthead .home-link {
     width: 100px;
     height: 50px;
@@ -574,14 +570,69 @@ a {
       padding: 10px; }
       #masthead ul li a {
         color: #808080;
+        text-decoration: none;
         text-transform: uppercase; }
+      #masthead ul li a:hover {
+        color: #d99054; }
+
+.search-form fieldset {
+  border: none;
+  padding: 0; }
+  .search-form fieldset button {
+    background-color: transparent;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: auto;
+    outline: none; }
+  .search-form fieldset button:hover {
+    background-color: transparent;
+    border: none; }
+  .search-form fieldset button:focus {
+    border: none; }
+  .search-form fieldset .search-field {
+    color: #d99054;
+    outline: none;
+    border: none;
+    background: transparent;
+    transition: all 1s;
+    width: 0px;
+    text-transform: uppercase;
+    font-family: 'novecentosanswide-normal-webfont'; }
+  .search-form fieldset .search-width {
+    width: 170px; }
+  .search-form fieldset .search-field:focus {
+    border: none; }
+
+::-webkit-input-placeholder {
+  color: #f0e4d1; }
+
+::-moz-placeholder {
+  color: #f0e4d1; }
+
+:-ms-input-placeholder {
+  color: #f0e4d1; }
+
+::placeholder {
+  color: #f0e4d1; }
+
+a:hover {
+  color: #d99054; }
+
+i {
+  color: #808080;
+  padding: 10px; }
 
 #masthead-home {
+  padding: 0 5%;
   font-family: 'novecentosanswide-normal-webfont';
   width: 100%;
   z-index: +1;
   position: absolute;
   background: rgba(255, 255, 255, 0); }
+  #masthead-home button {
+    color: white; }
   #masthead-home .home-link {
     width: 100px;
     height: 50px;
@@ -594,8 +645,6 @@ a {
   #masthead-home .site-branding a {
     width: 100px;
     height: 100px; }
-  #masthead-home i {
-    padding: 10px; }
   #masthead-home ul {
     display: -ms-flexbox;
     display: flex; }
@@ -605,6 +654,50 @@ a {
       #masthead-home ul li a {
         color: white;
         text-transform: uppercase; }
+      #masthead-home ul li a:hover {
+        color: #d99054; }
+
+.search-form fieldset {
+  border: none;
+  padding: 0; }
+  .search-form fieldset button {
+    background-color: transparent;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: auto;
+    outline: none; }
+  .search-form fieldset button:hover {
+    background-color: transparent;
+    border: none; }
+  .search-form fieldset button:focus {
+    border: none; }
+  .search-form fieldset .search-field {
+    color: #d99054;
+    outline: none;
+    border: none;
+    background: transparent;
+    transition: all 1s;
+    width: 0px;
+    text-transform: uppercase;
+    font-family: 'novecentosanswide-normal-webfont'; }
+  .search-form fieldset .search-width {
+    width: 170px; }
+  .search-form fieldset .search-field:focus {
+    border: none; }
+
+::-webkit-input-placeholder {
+  color: #f0e4d1; }
+
+::-moz-placeholder {
+  color: #f0e4d1; }
+
+:-ms-input-placeholder {
+  color: #f0e4d1; }
+
+::placeholder {
+  color: #f0e4d1; }
 
 #secondary {
   height: 100%;
@@ -630,6 +723,22 @@ a {
 
 .widget-title {
   font-size: 26px; }
+
+.search .search-title {
+  text-transform: uppercase;
+  font-family: 'novecentosanswide-demibold-webfont';
+  border-bottom: 1px solid #a1a1a1; }
+
+.search h1 {
+  font-size: 38px;
+  padding-bottom: 20px;
+  margin-top: 0; }
+
+.search #primary h2 {
+  color: #248A83; }
+
+.search button {
+  margin-left: 0; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -775,6 +884,8 @@ fieldset {
   .single-post .entry-header img {
     width: 100%;
     height: auto; }
+  .single-post .entry-header .entry-title:hover {
+    color: #f0e4d1; }
   .single-post .entry-header .entry-title {
     text-transform: uppercase;
     position: absolute;
@@ -808,6 +919,8 @@ fieldset {
   .blog .entry-header img {
     width: 100%;
     height: auto; }
+  .blog .entry-header .entry-title:hover {
+    color: #f0e4d1; }
   .blog .entry-header .entry-title {
     text-transform: uppercase;
     position: absolute;
@@ -831,8 +944,41 @@ fieldset {
     background-color: #248A83;
     color: white; }
 
+.archive .entry-header {
+  letter-spacing: .2rem;
+  position: relative;
+  line-height: 2.5rem; }
+  .archive .entry-header img {
+    width: 100%;
+    height: auto; }
+  .archive .entry-header .entry-title:hover {
+    color: #f0e4d1; }
+  .archive .entry-header .entry-title {
+    text-transform: uppercase;
+    position: absolute;
+    padding: 15px;
+    background-color: #248A83;
+    top: 0px;
+    width: 75%;
+    color: white;
+    font-size: 32px !important; }
+    .archive .entry-header .entry-title a {
+      color: white;
+      font-size: 36px;
+      text-decoration: none;
+      text-transform: uppercase; }
+  .archive .entry-header .entry-meta {
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 14px 0;
+    background-color: #248A83;
+    color: white; }
+
 button {
   border: 1px solid black;
+  font-family: 'novecentosanswide-normal-webfont';
   width: 140px;
   height: 40px;
   padding: 5px;
@@ -919,7 +1065,7 @@ ol {
 .shop-title {
   display: block;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 100px;
   font-family: 'novecentosanswide-demibold-webfont';
   text-transform: uppercase;
   font-size: 38px;
@@ -952,14 +1098,28 @@ ol {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
   height: 300px;
+  width: 20%;
   border: 1px solid #a1a1a1;
   margin: 15px; }
   .shop-product .text-wrapper {
-    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     padding: 5px;
     font-size: 16px; }
+    .shop-product .text-wrapper .price-text {
+      overflow: hidden;
+      white-space: nowrap; }
+    .shop-product .text-wrapper .price-text:after {
+      content: '................................';
+      display: inline;
+      overflow: hidden; }
     .shop-product .text-wrapper p {
+      display: inline-block;
       margin: 0; }
+    .shop-product .text-wrapper .price-numb {
+      z-index: 1; }
   .shop-product .image-wrapper {
     position: relative;
     height: 250px;
@@ -1006,6 +1166,11 @@ ol {
         width: 100px; }
         .product .shop-item .item-text button .fa {
           padding-right: 5px; }
+
+#primary-taxonomy {
+  -ms-flex-preferred-size: 73%;
+      flex-basis: 73%;
+  border-right: 1px solid lightgray; }
 
 .hero-banner {
   height: 800px;

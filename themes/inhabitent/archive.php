@@ -9,10 +9,22 @@ get_header(); ?>
 	<div>
 		<main id="main" class="site-main" role="main">
 		<?php if ( have_posts() ) : ?>
-		
-		<div><?php
+		<div>
+			<?php
 			the_archive_title( '<h1 class="shop-title">', '</h1>' );
-			the_archive_description( '<div class="taxonomy-description">', '</div>' ); ?>
+			the_archive_description( '<div class="taxonomy-description">', '</div>' );
+			?>
+			<ul class="shop-nav">
+				<?php    
+					$terms = get_terms( array(
+					'taxonomy' => 'product_type',
+					));
+					foreach ($terms as $term) :
+					$url = get_term_link( $term->slug , 'product_type');              
+				?>  
+				<li><a href='<?php echo $url?>' ><p class="shop-categor"><?php echo $term->slug; ?></p></a></li>
+    			<?php endforeach; ?>
+			</ul>
 		</div>
 			<ul class="shop-flex">
 			<?php /* Start the Loop */ ?>
@@ -22,9 +34,10 @@ get_header(); ?>
 						<a href="<?php the_permalink(); ?>" ><?php the_post_thumbnail( 'large' ); ?></a>
 					</div>
 					<div class="text-wrapper">
-					<p class="price-text"><?php the_title();?><div class="dotted-bord"></div>$<?php echo CFS()->get('price');?></p>
+						<p class="price-text"><?php the_title();?></p>
+						<p class="price-numb">$<?php echo CFS()->get('price');?></p>
 					</div>
-					</li>
+				</li>
 			<?php endwhile; ?>
 			</ul>
 			<?php the_posts_navigation(); ?>

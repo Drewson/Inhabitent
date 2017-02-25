@@ -76,5 +76,11 @@ function post_list( $query ){
 }
 add_action( 'pre_get_posts', 'post_list', 1);
 
-
+function product_archive_title($title) {
+    if(is_post_type_archive('products')) {
+        $title = 'Shop Stuff';
+    }
+    return $title;
+}
+add_filter('get_the_archive_title', 'product_archive_title');
 

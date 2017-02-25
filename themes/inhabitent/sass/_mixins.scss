@@ -12,6 +12,7 @@
 }
 
 @mixin picture-text {
+
 	.entry-header {
 		letter-spacing: .2rem;
 		position: relative;
@@ -20,6 +21,11 @@
 		img {
 			width: 100%;
 			height: auto;
+		}
+
+
+		.entry-title:hover {
+			color: #f0e4d1;
 		}
 
 		.entry-title{

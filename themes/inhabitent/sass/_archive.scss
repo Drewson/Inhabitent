@@ -7,7 +7,7 @@
 .shop-title {
     display: block;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 100px;
     font-family: 'novecentosanswide-demibold-webfont';
 	text-transform: uppercase;
 	font-size: 38px;
@@ -50,17 +50,37 @@
     display: inline-block;
     flex-basis: 20%;
     height: 300px;
+    width: 20%;
     border: 1px solid #a1a1a1;
     margin: 15px;
     
 
     .text-wrapper {
-        text-align: center;
+        display: flex;
+        justify-content: space-around;
         padding: 5px;
         font-size: 16px;
 
+        .price-text {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .price-text:after{
+            content: '................................';
+            display: inline;
+            overflow: hidden;
+
+        }
+
         p {
+            display: inline-block;
             margin: 0;
+        }
+
+        .price-numb {
+            // position: relative;
+            z-index: 1;
         }
     }
 
@@ -127,3 +147,17 @@
         }
     }
 }
+
+// .taxonomy-title {
+//     border-bottom: 1px solid lightgray;
+//     font-size: 40px;
+//     text-transform: uppercase;
+//     font-family: 'novecentosanswide-demibold-webfont';
+//     padding-bottom: 5%;
+// }
+
+#primary-taxonomy {
+    flex-basis: 73%;
+    border-right: 1px solid lightgray;
+}
+

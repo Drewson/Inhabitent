@@ -26,7 +26,7 @@
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="home-link"></a>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<i class="fa fa-search"></i>
+					<?php get_search_form() ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 

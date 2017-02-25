@@ -98,8 +98,13 @@ fieldset {
 	@include picture-text;
 }
 
+.archive {
+	@include picture-text;
+}
+
 button {
 	border: 1px solid black;
+	font-family: 'novecentosanswide-normal-webfont';
 	width: 140px;
 	height: 40px;
 	padding: 5px;
@@ -205,6 +210,8 @@ ol {
 .comment-content {
 	display: inline-block;
 }
+
+
 
 
 
