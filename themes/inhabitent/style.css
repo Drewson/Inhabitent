@@ -1427,57 +1427,63 @@ ol {
     text-decoration: none; }
 
 #colophon {
-  height: 512px;
+  height: 412px;
+  overflow: hidden;
   background-image: url(../../images/dark-wood@2x.png);
   background-size: 512px 512px; }
-  #colophon h3 {
-    font-family: 'novecentosanswide-demibold-webfont';
-    color: #d99054;
-    text-transform: uppercase;
-    font-family: "novecentosanswide"; }
-  #colophon p {
-    margin: 3px;
-    font-family: "novecentosanswide"; }
-    #colophon p span {
-      font-family: "novecentosanswide"; }
-  #colophon .fa {
-    font-size: 1.25rem;
-    padding-right: 7px; }
-  #colophon .site-info {
+  #colophon .main-footer-container {
+    height: 50%;
     display: -ms-flexbox;
     display: flex;
-    line-height: 1.75rem;
-    margin: 0 auto; }
-    #colophon .site-info .contact-info {
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    #colophon .main-footer-container .inhab-logo-text {
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      color: white;
-      padding: 5%;
-      -ms-flex-preferred-size: 27%;
-          flex-basis: 27%; }
-      #colophon .site-info .contact-info a {
-        color: white;
-        text-decoration: none;
-        padding-top: 5px; }
-    #colophon .site-info .business-hours {
-      color: white;
-      padding: 5% 1%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+      padding: 5% 5% 0 5%;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+      #colophon .main-footer-container .inhab-logo-text img {
+        width: 60%;
+        -ms-flex-item-align: start;
+            align-self: flex-start; }
+    #colophon .main-footer-container .footer-widgets {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      -ms-flex-preferred-size: 30%;
-          flex-basis: 30%; }
-      #colophon .site-info .business-hours .day-of-week {
-        padding: 7px; }
-  #colophon .inhab-logo-text {
-    -ms-flex-preferred-size: 40%;
-        flex-basis: 40%; }
-    #colophon .inhab-logo-text img {
-      width: 100%;
-      padding: 17% 25% 0 25%; }
+      color: white;
+      padding: 5% 5% 0 5%;
+      margin: 0;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      #colophon .main-footer-container .footer-widgets .day-of-week {
+        font-family: "merriweatherlight";
+        font-weight: bold; }
+      #colophon .main-footer-container .footer-widgets aside {
+        height: 100%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        margin: 0; }
+        #colophon .main-footer-container .footer-widgets aside .fa {
+          font-size: 20px;
+          padding-right: 10px; }
+        #colophon .main-footer-container .footer-widgets aside h2 {
+          margin: 0;
+          text-align: left; }
+        #colophon .main-footer-container .footer-widgets aside .contact-info a {
+          margin-top: 10px;
+          color: white; }
+        #colophon .main-footer-container .footer-widgets aside .widget-title {
+          font-size: 19px;
+          text-transform: uppercase;
+          color: #d99054;
+          font-family: "novecentosanswide";
+          margin-top: 0; }
   #colophon .copy-right {
     position: relative;
     margin: 0 auto;
@@ -1485,6 +1491,9 @@ ol {
     width: 100%;
     text-align: center;
     bottom: -100px; }
+
+.widget p {
+  display: inline-block; }
 
 /*--------------------------------------------------------------
 # Media
