@@ -538,8 +538,6 @@ a {
   #masthead .site-title {
     height: 30px;
     width: 30px; }
-  #masthead i {
-    padding: 10px; }
   #masthead ul {
     display: -ms-flexbox;
     display: flex; }
@@ -551,7 +549,7 @@ a {
         text-decoration: none;
         text-transform: uppercase; }
       #masthead ul li a:hover {
-        color: #d99054; }
+        color: #2f1339; }
   #masthead i {
     color: #808080;
     padding: 10px; }
@@ -596,7 +594,7 @@ a {
         text-transform: uppercase;
         text-decoration: none; }
       #masthead-home ul li a:hover {
-        color: #d99054; }
+        color: #f0e4d1; }
   #masthead-home i {
     color: white;
     padding: 10px; }
@@ -1197,6 +1195,7 @@ ol {
       flex-direction: row;
   padding: 0 5%; }
   .shopstuff .shop-stuff-item:hover {
+    border: 1px solid #d99054;
     border-top: 5px solid #d99054; }
   .shopstuff .shop-stuff-item {
     -ms-flex-preferred-size: 25%;
@@ -1232,6 +1231,8 @@ ol {
           flex-basis: 15%;
       overflow: visible;
       margin-top: 30px; }
+    .shopstuff .shop-stuff-item .button-link:hover {
+      background-color: #1f7a74; }
     .shopstuff .shop-stuff-item img {
       height: 90px;
       width: auto;

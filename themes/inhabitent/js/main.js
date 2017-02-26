@@ -2,6 +2,7 @@
     
     $('.fa-search').on('click', function(event){
         event.preventDefault();
+        console.log('hello');
         
         $('.search-field').toggleClass('search-width');
         $('.search-field').focus();
