@@ -538,6 +538,8 @@ a {
   #masthead .site-title {
     height: 30px;
     width: 30px; }
+  #masthead i {
+    padding: 10px; }
   #masthead ul {
     display: -ms-flexbox;
     display: flex; }

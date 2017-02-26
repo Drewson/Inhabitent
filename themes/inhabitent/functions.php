@@ -107,7 +107,6 @@ function red_starter_scripts() {
 
 
 
-	//Linking my Javascript files up
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('red_comments', get_template_directory_uri() . '/js/main.js', array('jquery'), false, true );
 
