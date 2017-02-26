@@ -108,13 +108,14 @@ function red_starter_scripts() {
 
 
 	wp_enqueue_script('jquery');
-	wp_enqueue_script('red_comments', get_template_directory_uri() . '/js/main.js', array('jquery'), false, true );
+	wp_enqueue_script('red_comments', get_template_directory_uri() . '/js/nav.js', array('jquery'), true, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
+
 
 /**
  * Custom template tags for this theme.
