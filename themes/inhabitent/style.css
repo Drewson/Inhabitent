@@ -1331,7 +1331,8 @@ ol {
       padding: 0 10px;
       margin-bottom: 22px; }
       .latest-adventures .three-pics .beach-pic p {
-        font-size: 3rem; }
+        font-size: 3rem;
+        margin-top: 0; }
       .latest-adventures .three-pics .beach-pic button {
         position: relative;
         bottom: 25px; }
