@@ -1,21 +1,36 @@
-# RED Starter
+#Inhabitent Wordpress Theme
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+A WordPress starter theme for a fictitious camping supplies company.
 
-## Installation
+#Installation
 
-### 1. Download me (don't clone me!)
+#Install the dev dependencies
 
-Then add me to your `wp-content` directory.
+Run npm install inside your theme directory next to install the node modules you'll need for Gulp, etc.
 
-### 2. Rename the `redstarter` directory
+Update the proxy in gulpfile.js
 
-Make sure that the theme directory name is project appropriate!
+Be sure to update your gulpfile.js with the appropriate URL for the Browsersync proxy (so change inhabitent.dev to the appropriate localhost URL).
 
-### 3. Install the dev dependencies
+#Stretch goals implemented
 
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
+-Added dashicons to customize the CPT menu items in the WP admin menu
+-Included a custom screenshot for my theme
+-Styled the header differently on the About and Home pages. *Did not add jquery to make it appear
+on scroll.
 
-### 4. Update the proxy in `gulpfile.js`
+#Learning Outcomes
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `inhabitent.dev` to the appropriate localhost URL).
+-Learned the importance of oragnizing SASS correctly from the beginning. I started by adding most of 
+my new css to the bottom of the sass partial, and it came back to bite me again and again, because it made
+things harder to find.
+
+-Gained an understanding of how PHP  works, and its differences from JavaScript.  It's differences
+in syntax, and how its embeded were hard to overcome, but in the end many of the similar skills
+transfered over.
+
+-Learned how to deal with a larger file structure. Makes me understand just how crucial being
+organized is. Easy to read code is so much less stressful.
+
+-Learned a lot about git, and the importance of committing constantly. I was able to solve a couple 
+big problems, because I was able to compare the changes I did in a previous commit.
