@@ -35,8 +35,8 @@ get_header(); ?>
 						<a href="<?php the_permalink(); ?>" ><?php the_post_thumbnail( 'large' ); ?></a>
 					</div>
 					<div class="text-wrapper">
-					<p class="price-text"><?php the_title();?></p>
-					<p>$<?php echo CFS()->get('price');?></p>
+						<p class="price-text"><?php the_title();?></p>
+						<p>$<?php echo CFS()->get('price');?></p>
 					</div>
 				</li>
 			<?php endwhile; ?>

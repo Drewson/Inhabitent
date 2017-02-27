@@ -386,7 +386,7 @@ h3 {
   font-family: "novecentosanswide";
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 26px;
+  font-size: 1.625rem;
   font-weight: bold; }
 
 a:hover {
@@ -642,7 +642,7 @@ a {
   #secondary h2 {
     font-family: "novecentosanswide";
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-transform: uppercase; }
   #secondary i {
     width: 30px; }
@@ -656,7 +656,7 @@ a {
   margin: 10px 0; }
 
 .widget-title {
-  font-size: 26px; }
+  font-size: 1.625rem; }
 
 #archives-2 ul {
   list-style: none;
@@ -673,7 +673,7 @@ a {
   border-bottom: 1px solid #a1a1a1; }
 
 .search h1 {
-  font-size: 38px;
+  font-size: 2.375rem;
   padding-bottom: 20px;
   margin-top: 0; }
 
@@ -818,7 +818,7 @@ fieldset {
     font-family: "novecentosanswide";
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: bold; }
 
 .entry-title {
@@ -841,15 +841,15 @@ fieldset {
     top: 0px;
     width: 75%;
     color: white;
-    font-size: 32px !important; }
+    font-size: 2rem !important; }
     .single-post .entry-header .entry-title a {
       color: white;
-      font-size: 33px;
+      font-size: 2.0625rem;
       text-decoration: none;
       text-transform: uppercase; }
   .single-post .entry-header .entry-meta {
     font-family: "novecentosanswide";
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: normal;
     text-transform: uppercase;
     position: absolute;
@@ -880,15 +880,15 @@ fieldset {
     top: 0px;
     width: 75%;
     color: white;
-    font-size: 32px !important; }
+    font-size: 2rem !important; }
     .blog .entry-header .entry-title a {
       color: white;
-      font-size: 33px;
+      font-size: 2.0625rem;
       text-decoration: none;
       text-transform: uppercase; }
   .blog .entry-header .entry-meta {
     font-family: "novecentosanswide";
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: normal;
     text-transform: uppercase;
     position: absolute;
@@ -916,15 +916,15 @@ fieldset {
     top: 0px;
     width: 75%;
     color: white;
-    font-size: 32px !important; }
+    font-size: 2rem !important; }
     .archive .entry-header .entry-title a {
       color: white;
-      font-size: 33px;
+      font-size: 2.0625rem;
       text-decoration: none;
       text-transform: uppercase; }
   .archive .entry-header .entry-meta {
     font-family: "novecentosanswide";
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: normal;
     text-transform: uppercase;
     position: absolute;
@@ -944,7 +944,7 @@ button {
   margin: 0 20px 40px 0;
   background-color: white;
   text-transform: uppercase;
-  font-size: 14px; }
+  font-size: .875rem; }
   button a {
     text-decoration: none;
     font-family: "novecentosanswide";
@@ -974,7 +974,7 @@ input[type=submit] {
   margin: 0 20px 40px 0;
   background-color: #248A83;
   text-transform: uppercase;
-  font-size: 14px; }
+  font-size: .875rem; }
 
 input[type=submit]:hover {
   background-color: #248A83; }
@@ -1040,7 +1040,7 @@ ol {
   font-family: "novecentosanswide";
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: bold; }
 
 .shop-flex {
@@ -1058,7 +1058,7 @@ ol {
   font-family: "novecentosanswide";
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 38px;
+  font-size: 2.375rem;
   font-weight: bold; }
 
 .taxonomy-description p {
@@ -1074,7 +1074,7 @@ ol {
   .shop-nav li {
     text-transform: uppercase;
     padding: 0 25px 25px 25px;
-    font-size: 19px;
+    font-size: 1.1875rem;
     display: inline-block; }
     .shop-nav li a {
       color: #808080;
@@ -1098,7 +1098,7 @@ ol {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     padding: 15px;
-    font-size: 16px; }
+    font-size: 1rem; }
     .shop-product .text-wrapper .price-text {
       overflow: hidden;
       white-space: nowrap; }
@@ -1126,7 +1126,7 @@ ol {
   .product .price-text {
     font-weight: bold;
     font-family: "novecentosanswide";
-    font-size: 30px; }
+    font-size: 1.875rem; }
   .product .shop-item {
     width: 100%;
     display: -ms-flexbox;
@@ -1134,7 +1134,7 @@ ol {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding: 0 0 100px 0;
-    font-size: 14px; }
+    font-size: .875rem; }
     .product .shop-item .item-img {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%; }
@@ -1143,17 +1143,17 @@ ol {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%; }
       .product .shop-item .item-text p {
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 28px; }
       .product .shop-item .item-text h2 {
-        font-size: 38px;
+        font-size: 2.375rem;
         color: #d99054;
         text-transform: uppercase;
         font-family: "novecentosanswide";
         font-weight: bold;
         margin: 0; }
       .product .shop-item .item-text .price-text {
-        font-size: 28px;
+        font-size: 1.75rem;
         font-weight: normal; }
       .product .shop-item .item-text button {
         margin: 0;
@@ -1174,7 +1174,7 @@ ol {
   border-bottom: 1px solid #e1e1e1;
   font-family: "novecentosanswide";
   font-weight: bold;
-  font-size: 38px;
+  font-size: 2.375rem;
   margin-bottom: 50px; }
 
 .hero-banner {
@@ -1218,7 +1218,7 @@ ol {
       text-align: center; }
     .shopstuff .shop-stuff-item .button-link {
       text-decoration: none;
-      font-size: 14px;
+      font-size: .875rem;
       text-transform: uppercase;
       font-family: "novecentosanswide";
       padding: 10px 0;
@@ -1257,14 +1257,14 @@ ol {
     .recent-posts .recent-post .post-text {
       width: 100%;
       padding: 10px;
-      font-size: 12px; }
+      font-size: .75rem; }
     .recent-posts .recent-post .post-title {
       width: 100%;
       text-transform: uppercase;
       font-family: "novecentosanswide";
       font-weight: bold;
       color: #248A83;
-      font-size: 20px;
+      font-size: 1.25rem;
       padding: 0 15px; }
     .recent-posts .recent-post button {
       font-family: "novecentosanswide";
@@ -1284,7 +1284,7 @@ ol {
 
 .home h2 {
   margin: 60px 0;
-  font-size: 38px;
+  font-size: 2.375rem;
   color: #404040;
   text-align: center;
   text-transform: uppercase;
@@ -1314,7 +1314,7 @@ ol {
     padding: 0 3%;
     margin: 0 10px; }
     .latest-adventures .canoe-pic p {
-      font-size: 48px; }
+      font-size: 3rem; }
   .latest-adventures .three-pics {
     height: 100%;
     width: 50%;
@@ -1331,7 +1331,7 @@ ol {
       padding: 0 10px;
       margin-bottom: 22px; }
       .latest-adventures .three-pics .beach-pic p {
-        font-size: 38px; }
+        font-size: 3rem; }
       .latest-adventures .three-pics .beach-pic button {
         position: relative;
         bottom: 25px; }
@@ -1344,7 +1344,7 @@ ol {
       padding: 0 10px;
       margin-right: 20px; }
       .latest-adventures .three-pics .mountain-pic p {
-        font-size: 24px; }
+        font-size: 1.5rem; }
     .latest-adventures .three-pics .night-pic {
       float: right;
       height: 47%;
@@ -1353,7 +1353,7 @@ ol {
       background-size: contain;
       padding: 0 10px; }
       .latest-adventures .three-pics .night-pic p {
-        font-size: 24px; }
+        font-size: 1.5rem; }
 
 .btn-wrp {
   width: 1120px;
@@ -1364,7 +1364,7 @@ ol {
   width: 220px;
   height: 50px;
   margin-left: 20px;
-  font-size: 19px;
+  font-size: 1.1875rem;
   border: none;
   color: white;
   background-color: #248A83;
@@ -1387,7 +1387,7 @@ ol {
         align-self: center;
     text-align: center;
     text-transform: uppercase;
-    font-size: 46px;
+    font-size: 2.875rem;
     color: white;
     font-family: "novecentosanswide";
     font-weight: bold; }
@@ -1396,7 +1396,7 @@ ol {
   margin: 5% 15%; }
 
 .page-about h2 {
-  font-size: 34px;
+  font-size: 2.125rem;
   text-align: center;
   text-transform: uppercase;
   font-family: "novecentosanswide";
@@ -1412,7 +1412,7 @@ ol {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    font-size: 44px;
+    font-size: 2.75rem;
     text-align: center;
     text-transform: uppercase;
     font-family: "novecentosanswide";
@@ -1473,7 +1473,7 @@ ol {
             flex-basis: 50%;
         margin: 0; }
         #colophon .main-footer-container .footer-widgets aside .fa {
-          font-size: 20px;
+          font-size: 1.25rem;
           padding-right: 10px; }
         #colophon .main-footer-container .footer-widgets aside h2 {
           margin: 0;
@@ -1482,7 +1482,7 @@ ol {
           margin-top: 10px;
           color: white; }
         #colophon .main-footer-container .footer-widgets aside .widget-title {
-          font-size: 19px;
+          font-size: 1.1875rem;
           text-transform: uppercase;
           color: #d99054;
           font-family: "novecentosanswide";
