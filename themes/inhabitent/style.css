@@ -556,13 +556,19 @@ a {
     color: #808080;
     padding: 10px; }
 
+.reverse-header {
+  position: absolute !important;
+  background: rgba(255, 255, 255, 0) !important; }
+  .reverse-header a {
+    color: white !important; }
+
 #masthead-home {
+  position: fixed;
   padding: 0 5%;
   font-family: "novecentosanswide";
   width: 100%;
   z-index: +1;
-  position: absolute;
-  background: rgba(255, 255, 255, 0); }
+  background: rgba(255, 255, 255, 0.9); }
   #masthead-home ::-webkit-input-placeholder {
     color: #f0e4d1; }
   #masthead-home ::-moz-placeholder {
@@ -592,7 +598,7 @@ a {
       display: inline-block;
       padding: 10px; }
       #masthead-home ul li a {
-        color: white;
+        color: black;
         text-transform: uppercase;
         text-decoration: none; }
       #masthead-home ul li a:hover {

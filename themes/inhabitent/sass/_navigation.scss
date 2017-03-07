@@ -173,13 +173,22 @@ a {
 	}
 }
 
+.reverse-header {
+	position: absolute !important;
+	background: rgba(255, 255, 255, 0 ) !important;
+
+	a {
+		color: white !important;
+	}
+}
+
 #masthead-home {
+	position: fixed;
 	padding: 0 5%;
 	font-family: $font_secondary;
 	width: 100%;
 	z-index: +1;
-	position: absolute;
-	background: rgba(255, 255, 255, 0 );
+	background: rgba(255, 255, 255, 0.9);
 
 	::placeholder {
 		color: #f0e4d1;
@@ -215,7 +224,7 @@ a {
 			padding: 10px;
 
 			a {
-				color: white;
+				color: black;
 				text-transform: uppercase;
 				text-decoration: none;
 			}
