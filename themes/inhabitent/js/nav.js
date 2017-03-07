@@ -12,8 +12,10 @@
         var scroll = $(window).scrollTop();
         if (scroll >= 870){
             $('#masthead-home').removeClass('reverse-header');
+            $('#masthead-home').addClass('unreverse-header');
         }else{
             $('#masthead-home').addClass('reverse-header');
+            $('#masthead-home').removeClass('unreverse-header');
         }
     })
 

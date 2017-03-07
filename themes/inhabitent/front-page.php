@@ -21,7 +21,7 @@ get_header('home'); ?>
         foreach ($terms as $term) :
           $url = get_term_link( $term->slug , 'product_type');              
     ?>  
-      <div class="shop-stuff-item">
+      <div class="shop-item">
           <div>       
               <img src="<?php echo get_template_directory_uri();?>/images/product-type-icons/<?php echo $term->slug; ?>.svg" alt="">
           </div>
@@ -42,7 +42,7 @@ get_header('home'); ?>
 					<div class="post-text"><?php red_starter_posted_on(); ?>  / 
 					<?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?><br></div>
 					<div class="post-title"><?php the_title(); ?></div>
-					<button><a href='<?php the_permalink(); ?>'> Read Entry</a></button>
+					<a class="read-more" href='<?php the_permalink(); ?>'> Read Entry</a>
 				</div>
 			<?php endforeach; 
 			wp_reset_postdata();?>
@@ -52,20 +52,20 @@ get_header('home'); ?>
 		<div class="latest-adventures">
 			<div class="canoe-pic">
 				<p>Getting Back to Nature in a Canoe</p>
-				<button><a href="<?php the_permalink(); ?> ">Read More &rarr;</a></button>
+				<a class="read-more" href="<?php the_permalink(); ?> ">Read More</a>
 			</div>
 			<div class="three-pics">
 				<div class="beach-pic">
 					<p>A Night with Friends at the Beach</p>
-					<button><a href="<?php the_permalink(); ?> ">Read More &rarr;</a></button>
+					<a class="read-more" href="<?php the_permalink(); ?> ">Read More</a>
 				</div>
 				<div class="mountain-pic">
 					<p>Taking in the View at Big Mountain</p>
-					<button><a href="<?php the_permalink(); ?> ">Read More &rarr;</a></button>
+					<a class="read-more" href="<?php the_permalink(); ?> ">Read More</a>
 				</div>
 				<div class="night-pic">
 					<p>Star-Gazing at the Night Sky</p>
-					<button><a href="<?php the_permalink(); ?> ">Read More &rarr;</a></button>
+					<a class="read-more" href="<?php the_permalink(); ?> ">Read More</a>
 				</div>
 			</div>
 		</div>

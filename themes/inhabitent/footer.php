@@ -14,15 +14,13 @@
 						<?php dynamic_sidebar( 'footer' ); ?>
 					</div>
 					<div class="inhab-logo-text">
-						<img src ="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-text.svg" />
+						<img src ="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-text.svg" alt="inhabitent-logo" />
 					</div>
-				</div>
 				</div><!-- .site-info -->
 				<div class="copy-right"> 
-					</p>COPYRIGHT © 2016 INHABITENT</p>
+					<p>COPYRIGHT &copy; 2016 INHABITENT</p>
 				</div>
 			</footer><!-- #colophon -->
-		</div><!-- #page -->
 		<?php wp_footer(); ?>
 	</body>
 </html>

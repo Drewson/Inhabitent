@@ -21,12 +21,12 @@
     flex-direction: row;
     padding: 0 5%;
 
-    .shop-stuff-item:hover {
+    .shop-item:hover {
         border: 1px solid $color__link-hover;
         border-top: 5px solid $color__link-hover;
     }
 
-    .shop-stuff-item {
+    .shop-item {
         flex-basis: 25%;
         margin: 10px;
         border: 1px solid $solid_border;
@@ -100,11 +100,21 @@
             padding: 0 15px;
         }
 
-        button {
+        .read-more {
             font-family: $font_secondary;
-            position: absolute;
-            bottom: -30px;
+            height: 50px;
+            width: 120px;
             margin-left: 10px;
+            position: absolute;
+            bottom: -50px;
+            color: black;
+            padding-bottom: 5px;
+        }
+
+        .read-more:hover {
+            background-color: #1f7a74;
+            border: none;
+            color: white;
         }
 
         .post-image{
@@ -147,15 +157,17 @@
     height: 450px;
     color: white;
     font-family: $font_secondary;
-
-    button {
+        
+    .read-more {
         background: rgba(0,0,0,0);
         border: 1px solid white;
-        
-        a {
-            color: white;
-        }
+        color: white;
+    }
 
+    .read-more:hover {
+        background-color: #1f7a74;
+        border: none;
+        color: white;
     }
 
     .canoe-pic {
@@ -171,6 +183,7 @@
 
         p {
             font-size: 3rem;
+            line-height: 4rem;
         }
     }
 
@@ -178,6 +191,10 @@
         height: 100%;
         width: 50%;
         float: right;
+
+        p {
+            line-height: 2rem;
+        }
 
         .beach-pic {
             display: inline-block;
@@ -193,13 +210,9 @@
             margin-bottom: 22px;
 
             p {
-                font-size: 3rem;
-                margin-top: 0;
-            }
-
-            button {
-                position: relative;
-                bottom: 25px;
+                font-size: 2.5rem;
+                margin-top: 15px;
+                line-height: 3rem;
             }
         }
         .mountain-pic {
@@ -241,7 +254,7 @@
 .adv-btn {
     width: 220px;
     height: 50px;
-    margin-left: 20px;
+    margin: 0 auto;
     font-size: 1.1875rem;
     border: none;
     color: white;
