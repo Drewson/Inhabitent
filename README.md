@@ -35,4 +35,4 @@ organized is. Easy to read code is so much less stressful.
 -Learned a lot about git, and the importance of committing constantly. I was able to solve a couple 
 big problems, because I was able to compare the changes I did in a previous commit.
 
-![Inhabitent](screenshot.png)
+![alt tag](themes/inhabitent/images/screenshot.png)
