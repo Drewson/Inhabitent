@@ -19,9 +19,9 @@ get_header(); ?>
                 <h2><?php the_title(); ?></h2>
                 <p class="price-text">$<?php echo CFS()->get('price');?></p>
                 <p><?php the_excerpt(); ?></p>
-                <button><i class="fa fa-facebook"></i><a href="http:/www.facebook.com"> Like</a></button>
-                <button><i class="fa fa-twitter"></i><a href="http:/www.twitter.com">Tweet</a></button>
-                <button><i class="fa fa-pinterest"></i><a href="http:/www.pintrest.com">Pin</a></button>
+                <a class="read-more" href="http:/www.facebook.com"><i class="fa fa-facebook"></i>Like</a>
+                <a class="read-more" href="http:/www.twitter.com"><i class="fa fa-twitter"></i>Tweet</a>
+                <a class="read-more" href="http:/www.pintrest.com"><i class="fa fa-pinterest"></i>Pin</a>
             </div>
         </div>
 

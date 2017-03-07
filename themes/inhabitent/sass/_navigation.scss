@@ -115,7 +115,6 @@ a {
 	background-repeat: no-repeat;
 	background-size: 50px 50px;
 	background-position: 5%; 
-	background-color: rgba(0, 0, 0, 0);
 	font-family: $font_secondary;
 	width: 100%;
 	position: fixed;
@@ -190,6 +189,11 @@ a {
 	background-size: 50px 50px;
 	background-position: 5%; 
 
+	a {
+		color: #808080;
+	}
+
+
 	i{
 		color: gray !important;
 	}
@@ -237,7 +241,6 @@ a {
 			padding: 10px;
 
 			a {
-				color: black;
 				text-transform: uppercase;
 				text-decoration: none;
 			}

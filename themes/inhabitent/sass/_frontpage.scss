@@ -174,15 +174,13 @@
         height: 100%;
         width: 47%;
         float: left;
-        background:linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
-         url("../../images/adventure-photos/canoe-girl.jpg"),
-        rgba(0,0,0,.35);
+        background: url("../../images/adventure-photos/canoe-girl.jpg"),rgba(0,0,0,1);
         background-size: cover;
         padding: 0 3%;
         margin: 0 10px;
 
         p {
-            font-size: 3rem;
+            font-size: 2.5rem;
             line-height: 4rem;
         }
     }
