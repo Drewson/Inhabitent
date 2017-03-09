@@ -104,6 +104,10 @@ fieldset {
 //journal page
 .blog {
 
+	.read-more {
+		padding: 10px 20px;
+	}
+
 	article {
 		margin-top: 70px;
 	}
@@ -119,9 +123,6 @@ fieldset {
 	text-decoration: none;
 	border: 1px solid black;
 	font-family: $font_secondary;
-	width: 140px;
-	height: 70px;
-	padding: 15px;
 	margin: 0 20px 60px 0;
 	color: black;
 	background-color: white;

@@ -11,6 +11,17 @@
 	margin-right: auto;
 }
 
+@mixin adventure-img {
+	img {
+            width: auto;
+            max-width: none;
+            max-height: 620px;
+            position: absolute;
+            top: 0;
+            left: -70px;
+        }
+}
+
 @mixin picture-text {
 
 	.entry-header {

@@ -180,17 +180,26 @@ a {
 	a {
 		color: white !important;
 	}
+
+	a:hover {
+		color: $color__background-ins !important;
+	}
 }
 
 .unreverse-header {
 	background: url(../../images/logos/inhabitent-logo-tent.svg),
 	rgba(255, 255, 255, 0.9);
+	border-bottom: $solid_border;
 	background-repeat: no-repeat;
 	background-size: 50px 50px;
 	background-position: 5%; 
 
 	a {
 		color: #808080;
+	}
+
+	a:hover {
+		color: $color__link-visited !important;
 	}
 
 

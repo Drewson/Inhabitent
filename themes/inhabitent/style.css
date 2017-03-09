@@ -556,14 +556,19 @@ a {
   background-position: 5%; }
   .reverse-header a {
     color: white !important; }
+  .reverse-header a:hover {
+    color: #fff9c0 !important; }
 
 .unreverse-header {
   background: url(../../images/logos/inhabitent-logo-tent.svg), rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid #e1e1e1;
   background-repeat: no-repeat;
   background-size: 50px 50px;
   background-position: 5%; }
   .unreverse-header a {
     color: #808080; }
+  .unreverse-header a:hover {
+    color: purple !important; }
   .unreverse-header i {
     color: gray !important; }
 
@@ -876,6 +881,9 @@ fieldset {
 .single-post button {
   margin: 0; }
 
+.blog .read-more {
+  padding: 10px 20px; }
+
 .blog article {
   margin-top: 70px; }
 
@@ -957,9 +965,6 @@ fieldset {
   text-decoration: none;
   border: 1px solid black;
   font-family: "novecentosanswide";
-  width: 140px;
-  height: 70px;
-  padding: 15px;
   margin: 0 20px 60px 0;
   color: black;
   background-color: white;
@@ -1272,7 +1277,6 @@ ol {
   top: 20px;
   left: 20px; }
   .adv-text p {
-    line-height: 3.5rem;
     color: white;
     font-size: 48px;
     width: 80%; }
@@ -1286,29 +1290,23 @@ ol {
     border: none;
     color: white; }
 
-.hero-banner {
+.home .hero-banner {
   height: 800px;
   background: url("../../images/logos/inhabitent-logo-full.svg") center center no-repeat, linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg);
   background-size: auto, cover, cover; }
 
-.front-page-content h2 {
-  font-family: "novecentosanswide";
-  font-weight: normal; }
-
-.shopstuff {
+.home .shopstuff {
   display: -ms-flexbox;
   display: flex;
   height: 300px;
   width: 100%;
   -ms-flex-pack: center;
       justify-content: center;
-  -ms-flex-direction: row;
-      flex-direction: row;
   padding: 0 5%; }
-  .shopstuff .shop-item:hover {
+  .home .shopstuff .shop-item:hover {
     border: 1px solid #d99054;
     border-top: 5px solid #d99054; }
-  .shopstuff .shop-item {
+  .home .shopstuff .shop-item {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
     margin: 10px;
@@ -1320,12 +1318,12 @@ ol {
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center; }
-    .shopstuff .shop-item p {
+    .home .shopstuff .shop-item p {
       margin: 0 10px;
       -ms-flex-preferred-size: 20%;
           flex-basis: 20%;
       text-align: center; }
-    .shopstuff .shop-item .button-link {
+    .home .shopstuff .shop-item .button-link {
       text-decoration: none;
       font-size: .875rem;
       text-transform: uppercase;
@@ -1342,62 +1340,53 @@ ol {
           flex-basis: 15%;
       overflow: visible;
       margin-top: 30px; }
-    .shopstuff .shop-item .button-link:hover {
+    .home .shopstuff .shop-item .button-link:hover {
       background-color: #1f7a74; }
-    .shopstuff .shop-item img {
+    .home .shopstuff .shop-item img {
       height: 90px;
-      width: auto;
       padding: 10px;
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%; }
 
-.recent-posts {
+.home .recent-posts {
   display: -ms-flexbox;
   display: flex;
   height: 425px;
   -ms-flex-pack: center;
       justify-content: center; }
-  .recent-posts .recent-post {
+  .home .recent-posts .recent-post {
     position: relative;
     margin: 15px;
     border: 1px solid 1px solid #e1e1e1;
     width: 400px;
     height: 400px; }
-    .recent-posts .recent-post .post-text {
+    .home .recent-posts .recent-post .post-text {
       width: 100%;
-      padding: 10px;
+      padding: 10px 10px 0 10px;
       font-size: .75rem; }
-    .recent-posts .recent-post .post-title {
+    .home .recent-posts .recent-post .post-title {
       width: 100%;
       text-transform: uppercase;
       font-family: "novecentosanswide";
       font-weight: bold;
       color: #248A83;
       font-size: 1.25rem;
-      padding: 0 15px; }
-    .recent-posts .recent-post .read-more {
-      font-family: "novecentosanswide";
-      height: 50px;
-      width: 120px;
-      margin-left: 10px;
-      color: black;
-      padding-bottom: 5px; }
-    .recent-posts .recent-post .read-more:hover {
-      background-color: #1f7a74;
-      border: none;
-      color: white; }
-    .recent-posts .recent-post .post-image {
+      padding: 0 10px 20px 10px;
+      letter-spacing: 2px; }
+    .home .recent-posts .recent-post .read-more {
+      padding: 10px 20px;
+      margin-left: 10px; }
+    .home .recent-posts .recent-post .post-image {
       width: 100%;
       height: 60%;
       overflow: hidden;
       border-bottom: 5px inset 1px solid #e1e1e1; }
-      .recent-posts .recent-post .post-image img {
+      .home .recent-posts .recent-post .post-image img {
         height: 100%; }
 
-.home a:hover {
-  color: #f0e4d1; }
-
 .home h2 {
+  font-family: "novecentosanswide";
+  font-weight: normal;
   margin: 60px 0;
   font-size: 2.375rem;
   color: #404040;
@@ -1405,39 +1394,41 @@ ol {
   text-transform: uppercase;
   font-family: "novecentosanswide"; }
 
-.canoe-pic:hover, .mountain-pic:hover, .night-pic :hover, .beach-pic :hover {
+.home .canoe-pic:hover, .home .mountain-pic:hover, .home .night-pic :hover, .home .beach-pic :hover {
   color: #f0e4d1; }
 
-.latest-adventures {
+.home .latest-adventures {
   width: 1120px;
   margin: 0 auto;
   margin-bottom: 20px;
-  height: 500px;
+  height: 530px;
   color: white;
   font-family: "novecentosanswide"; }
-  .latest-adventures .adventure-pic {
+  .home .latest-adventures .adventure-pic {
     position: relative; }
-    .latest-adventures .adventure-pic .colorMeDark {
+    .home .latest-adventures .adventure-pic .colorMeDark {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.3); }
-    .latest-adventures .adventure-pic .adv-text {
+    .home .latest-adventures .adventure-pic .adv-text {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%; }
-      .latest-adventures .adventure-pic .adv-text p {
+      .home .latest-adventures .adventure-pic .adv-text p {
         display: inline;
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
-        height: 40px;
-        width: 100%; }
-      .latest-adventures .adventure-pic .adv-text .read-more {
-        display: inline;
+        height: auto;
+        width: 100%;
+        padding: 0 15px; }
+      .home .latest-adventures .adventure-pic .adv-text .read-more {
+        float: left;
+        margin: 0 20px;
         background: transparent;
         border: 1px solid white;
         color: white;
@@ -1447,67 +1438,72 @@ ol {
         font-size: 16px;
         -ms-flex-item-align: start;
             align-self: flex-start; }
-      .latest-adventures .adventure-pic .adv-text .read-more:hover {
-        background-color: #1f7a74;
-        border: none;
-        color: white; }
-  .latest-adventures :nth-child(1) {
+  .home .latest-adventures :nth-child(1) {
     float: left;
-    width: 50%;
+    width: 49%;
     height: 100%;
     font-size: 48px;
     position: relative;
     overflow: hidden; }
-    .latest-adventures :nth-child(1) p {
-      font-size: 48px; }
-    .latest-adventures :nth-child(1) img {
+    .home .latest-adventures :nth-child(1) .adv-text p {
+      font-size: 48px;
+      padding-bottom: 5px;
+      line-height: 3.5rem; }
+    .home .latest-adventures :nth-child(1) img {
       width: auto;
       max-width: none;
       max-height: 620px;
       position: absolute;
       top: 0;
       left: -70px; }
-  .latest-adventures :nth-child(2) {
+  .home .latest-adventures :nth-child(2) {
     font-size: 38px;
     float: right;
-    width: 48%;
+    width: 49%;
     height: 48%;
     margin-bottom: 20px;
     overflow: hidden;
     position: relative; }
-    .latest-adventures :nth-child(2) p {
-      font-size: 38px; }
-    .latest-adventures :nth-child(2) img {
-      width: 100%;
-      max-width: none;
-      max-height: 620px;
-      position: absolute;
-      top: 0; }
-  .latest-adventures :nth-child(3) {
-    float: right;
-    width: 23%;
-    height: 48%;
-    overflow: hidden;
-    position: relative; }
-    .latest-adventures :nth-child(3) p {
-      font-size: 25px; }
-    .latest-adventures :nth-child(3) img {
+    .home .latest-adventures :nth-child(2) .adv-text p {
+      font-size: 38px;
+      line-height: 3rem; }
+    .home .latest-adventures :nth-child(2) img {
       width: auto;
       max-width: none;
       max-height: 620px;
       position: absolute;
       top: 0;
       left: -70px; }
-  .latest-adventures :nth-child(4) {
+    .home .latest-adventures :nth-child(2) img {
+      width: 100%;
+      left: 0; }
+  .home .latest-adventures :nth-child(3) {
     float: right;
-    width: 23%;
+    width: 23.5%;
+    height: 48%;
+    overflow: hidden;
+    position: relative; }
+    .home .latest-adventures :nth-child(3) .adv-text p {
+      font-size: 25px;
+      line-height: 2rem; }
+    .home .latest-adventures :nth-child(3) img {
+      width: auto;
+      max-width: none;
+      max-height: 620px;
+      position: absolute;
+      top: 0;
+      left: -70px; }
+  .home .latest-adventures :nth-child(4) {
+    float: right;
+    width: 23.5%;
     height: 48%;
     margin-right: 20px;
     overflow: hidden;
     position: relative; }
-    .latest-adventures :nth-child(4) p {
-      font-size: 25px; }
-    .latest-adventures :nth-child(4) img {
+    .home .latest-adventures :nth-child(4) .adv-text p {
+      font-size: 25px;
+      line-height: 2rem; }
+    .home .latest-adventures :nth-child(4) img {
       width: auto;
       max-width: none;
       max-height: 620px;
@@ -1515,12 +1511,12 @@ ol {
       top: 0;
       left: -70px; }
 
-.btn-wrp {
+.home .btn-wrp {
   width: 1120px;
   margin-left: 69px;
   margin-bottom: 30px; }
 
-.adv-btn {
+.home .adv-btn {
   padding: 10px 20px;
   margin: 0 auto;
   font-size: 1.1875rem;
@@ -1531,11 +1527,16 @@ ol {
   text-decoration: none;
   text-transform: uppercase; }
 
-.adv-btn:visited {
+.home .adv-btn:visited {
   color: white; }
 
-#primary-menu li a:hover {
+.home #primary-menu li a:hover {
   color: #f0e4d1; }
+
+.home .read-more:hover {
+  background-color: #1f7a74;
+  border: none;
+  color: white; }
 
 .about-head {
   display: -ms-flexbox;

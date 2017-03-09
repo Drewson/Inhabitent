@@ -1,3 +1,5 @@
+.home{
+
 .hero-banner {
     height: 800px;
     background: url("../../images/logos/inhabitent-logo-full.svg") center center no-repeat,
@@ -5,20 +7,11 @@
     background-size: auto, cover, cover;
 }
 
-.front-page-content {
-    
-    h2 {
-        font-family: $font_secondary;
-        font-weight: normal;
-    }
-}
-
 .shopstuff {
     display: flex;
     height: 300px;
     width: 100%;
     justify-content: center;
-    flex-direction: row;
     padding: 0 5%;
 
     .shop-item:hover {
@@ -65,7 +58,6 @@
 
         img {
             height: 90px;
-            width: auto;
             padding: 10px;
             flex-basis: 50%;
         }
@@ -86,7 +78,7 @@
 
         .post-text {
             width: 100%;
-            padding:10px;
+            padding:10px 10px 0 10px;
             font-size: .75rem;
         }
 
@@ -97,22 +89,13 @@
             font-weight: bold;
             color: #248A83;
             font-size: 1.25rem;
-            padding: 0 15px;
+            padding: 0 10px 20px 10px;
+            letter-spacing: 2px;
         }
 
         .read-more {
-            font-family: $font_secondary;
-            height: 50px;
-            width: 120px;
+            padding: 10px 20px;
             margin-left: 10px;
-            color: black;
-            padding-bottom: 5px;
-        }
-
-        .read-more:hover {
-            background-color: #1f7a74;
-            border: none;
-            color: white;
         }
 
         .post-image{
@@ -128,31 +111,26 @@
     }
 }
 
-.home{
-    a:hover {
-        color: #f0e4d1;
-    }
-
-    h2 {
-        margin: 60px 0;
-        font-size: 2.375rem;
-        color: #404040;
-        text-align: center;
-        text-transform: uppercase;
-        font-family: $font_secondary;
-    }
+h2 {
+    font-family: $font_secondary;
+    font-weight: normal;
+    margin: 60px 0;
+    font-size: 2.375rem;
+    color: #404040;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $font_secondary;
 }
 
 .canoe-pic:hover, .mountain-pic:hover, .night-pic :hover, .beach-pic :hover {
     color: #f0e4d1;
 }
 
-
 .latest-adventures {
     width: 1120px;
     margin: 0 auto;
     margin-bottom: 20px;
-    height: 500px;
+    height: 530px;
     color: white;
     font-family: $font_secondary;
 
@@ -178,12 +156,14 @@
             p {
                 display: inline;
                 flex-basis: 100%;
-                height: 40px;
+                height: auto;
                 width: 100%;
+                padding: 0 15px;
             }
 
             .read-more {
-                display: inline;
+                float: left;
+                margin: 0 20px;
                 background: rgba(0,0,0,0);
                 border: 1px solid white;
                 color: white;
@@ -193,102 +173,72 @@
                 font-size: 16px;
                 align-self: flex-start;
             }
-
-            .read-more:hover {
-                background-color: #1f7a74;
-                border: none;
-                color: white;
-            }
         }
     }
 
     :nth-child(1) {
         float: left;
-        width: 50%;
+        width: 49%;
         height: 100%;
         font-size: 48px;
         position: relative;
         overflow: hidden;
 
-        p {
+        .adv-text p {
             font-size: 48px;
+            padding-bottom: 5px;
+            line-height: 3.5rem;
         }
-
-        img {
-            width: auto;
-            max-width: none;
-            max-height: 620px;
-            position: absolute;
-            top: 0;
-            left: -70px;
-        }
+        @include adventure-img;
     }
 
     :nth-child(2) {
         font-size: 38px;
         float: right;
-        width: 48%;
+        width: 49%;
         height: 48%;
         margin-bottom: 20px;
         overflow: hidden;
         position: relative;
 
-        p {
+        .adv-text p {
             font-size: 38px;
+            line-height: 3rem;
         }
-
+        @include adventure-img;
         img {
             width: 100%;
-            max-width: none;
-            max-height: 620px;
-            position: absolute;
-            top: 0;
-            
+            left: 0;
         }
     }
 
     :nth-child(3) {
         float: right;
-        width: 23%;
+        width: 23.5%;
         height: 48%;
         overflow: hidden;
         position: relative;
 
-        p {
+        .adv-text p {
             font-size: 25px;
+            line-height: 2rem;
         }        
-
-        img {
-            width: auto;
-            max-width: none;
-            max-height: 620px;
-            position: absolute;
-            top: 0;
-            left: -70px;
-        }
+        @include adventure-img;
     }
 
     :nth-child(4) {
         float: right;
-        width: 23%;
+        width: 23.5%;
         height: 48%;
         margin-right: 20px;
         overflow: hidden;
         position: relative;
 
-        p{
+        .adv-text p{
             font-size: 25px;
+            line-height: 2rem;
         }
-        
-
-        img {
-            width: auto;
-            max-width: none;
-            max-height: 620px;
-            position: absolute;
-            top: 0;
-            left: -70px;
-        }
+        @include adventure-img;
     }
     
 }
@@ -318,9 +268,13 @@
     li{
         a:hover{
             color: #f0e4d1;
-        }
-        
+        } 
     }
-    
 }
 
+.read-more:hover {
+    background-color: #1f7a74;
+    border: none;
+    color: white;
+}
+}
