@@ -1124,10 +1124,10 @@ ol {
         justify-content: space-around;
     padding: 15px;
     font-size: 1rem; }
-    .shop-product .text-wrapper .price-text {
+    .shop-product .text-wrapper .title-text {
       overflow: hidden;
       white-space: nowrap; }
-    .shop-product .text-wrapper .price-text:after {
+    .shop-product .text-wrapper .title-text:after {
       content: '................................';
       display: inline;
       overflow: hidden; }
@@ -1201,6 +1201,91 @@ ol {
   font-weight: bold;
   font-size: 2.375rem;
   margin-bottom: 50px; }
+
+.adventure .adventure-img {
+  height: 100vh;
+  width: 100%; }
+  .adventure .adventure-img img {
+    width: 100%;
+    height: 100vh; }
+
+.adventure .adventure-text {
+  margin: 5% 15%; }
+  .adventure .adventure-text h2 {
+    font-family: "novecentosanswide";
+    text-transform: uppercase;
+    font-size: 38px;
+    margin-bottom: 0; }
+  .adventure .adventure-text .author {
+    margin: 0;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-family: "novecentosanswide"; }
+  .adventure .adventure-text p {
+    font-size: 16px; }
+  .adventure .adventure-text .read-more {
+    color: black;
+    padding: 10px 30px;
+    margin-top: 20px; }
+
+.adventure-title {
+  text-align: center;
+  margin-top: 5%;
+  padding: 30px;
+  font-size: 38px;
+  font-family: "novecentosanswide";
+  text-transform: uppercase;
+  border-bottom: 1px dashed #c8c8c8; }
+
+.adventure-home {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  height: 1100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .adventure-home .adventure-pic {
+    display: inline-block;
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+    margin: 10px;
+    position: relative;
+    overflow: hidden; }
+    .adventure-home .adventure-pic img {
+      display: inline;
+      height: 100%;
+      max-width: none;
+      width: auto; }
+    .adventure-home .adventure-pic .colorMeDark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3); }
+    .adventure-home .adventure-pic p {
+      position: absolute;
+      color: white;
+      font-size: 48px;
+      top: 20px;
+      left: 20px;
+      width: 90%; }
+    .adventure-home .adventure-pic .read-more {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      height: 50px; }
+    .adventure-home .adventure-pic .read-more {
+      background: transparent;
+      border: 1px solid white;
+      color: white; }
+    .adventure-home .adventure-pic .read-more:hover {
+      background-color: #1f7a74;
+      border: none;
+      color: white; }
 
 .hero-banner {
   height: 800px;
@@ -1330,7 +1415,7 @@ ol {
   width: 1120px;
   margin: 0 auto;
   margin-bottom: 20px;
-  height: 450px;
+  height: 500px;
   color: white;
   font-family: "novecentosanswide"; }
   .latest-adventures .read-more {
@@ -1341,57 +1426,93 @@ ol {
     background-color: #1f7a74;
     border: none;
     color: white; }
-  .latest-adventures .canoe-pic {
-    height: 100%;
-    width: 47%;
-    float: left;
-    background: url("../../images/adventure-photos/canoe-girl.jpg"), black;
-    background-size: cover;
-    padding: 0 3%;
-    margin: 0 10px; }
-    .latest-adventures .canoe-pic p {
-      font-size: 2.5rem;
-      line-height: 4rem; }
-  .latest-adventures .three-pics {
-    height: 100%;
-    width: 50%;
-    float: right; }
-    .latest-adventures .three-pics p {
-      line-height: 2rem; }
-    .latest-adventures .three-pics .beach-pic {
-      display: inline-block;
-      float: right;
-      height: 48%;
+  .latest-adventures .adventure-pic {
+    position: relative; }
+    .latest-adventures .adventure-pic .colorMeDark {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/adventure-photos/beach-bonfire.jpg");
-      background-position: center;
-      background-size: 100%;
-      overflow: hidden;
-      padding: 0 10px;
-      margin-bottom: 22px; }
-      .latest-adventures .three-pics .beach-pic p {
-        font-size: 2.5rem;
-        margin-top: 15px;
-        line-height: 3rem; }
-    .latest-adventures .three-pics .mountain-pic {
-      display: inline-block;
-      height: 47%;
-      width: 48%;
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/adventure-photos/mountain-hikers.jpg");
-      background-size: cover;
-      padding: 0 10px;
-      margin-right: 20px; }
-      .latest-adventures .three-pics .mountain-pic p {
-        font-size: 1.5rem; }
-    .latest-adventures .three-pics .night-pic {
-      float: right;
-      height: 47%;
-      width: 48%;
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/adventure-photos/night-sky.jpg");
-      background-size: contain;
-      padding: 0 10px; }
-      .latest-adventures .three-pics .night-pic p {
-        font-size: 1.5rem; }
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3); }
+    .latest-adventures .adventure-pic p {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 90%;
+      margin: 2px; }
+    .latest-adventures .adventure-pic a {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      height: 45px;
+      width: 140px;
+      margin: 0;
+      padding: 12px;
+      text-align: center; }
+  .latest-adventures :nth-child(1) {
+    float: left;
+    width: 50%;
+    height: 100%;
+    font-size: 48px;
+    position: relative;
+    overflow: hidden; }
+    .latest-adventures :nth-child(1) p {
+      font-size: 48px; }
+    .latest-adventures :nth-child(1) img {
+      width: auto;
+      max-width: none;
+      max-height: 620px;
+      position: absolute;
+      top: 0;
+      left: -70px; }
+  .latest-adventures :nth-child(2) {
+    font-size: 38px;
+    float: right;
+    width: 48%;
+    height: 48%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative; }
+    .latest-adventures :nth-child(2) p {
+      font-size: 38px; }
+    .latest-adventures :nth-child(2) img {
+      width: 100%;
+      max-width: none;
+      max-height: 620px;
+      position: absolute;
+      top: 0; }
+  .latest-adventures :nth-child(3) {
+    float: right;
+    width: 23%;
+    height: 48%;
+    overflow: hidden;
+    position: relative; }
+    .latest-adventures :nth-child(3) p {
+      font-size: 25px; }
+    .latest-adventures :nth-child(3) img {
+      width: auto;
+      max-width: none;
+      max-height: 620px;
+      position: absolute;
+      top: 0;
+      left: -70px; }
+  .latest-adventures :nth-child(4) {
+    float: right;
+    width: 23%;
+    height: 48%;
+    margin-right: 20px;
+    overflow: hidden;
+    position: relative; }
+    .latest-adventures :nth-child(4) p {
+      font-size: 25px; }
+    .latest-adventures :nth-child(4) img {
+      width: auto;
+      max-width: none;
+      max-height: 620px;
+      position: absolute;
+      top: 0;
+      left: -70px; }
 
 .btn-wrp {
   width: 1120px;
@@ -1399,14 +1520,17 @@ ol {
   margin-bottom: 30px; }
 
 .adv-btn {
-  width: 220px;
-  height: 50px;
+  padding: 10px 20px;
   margin: 0 auto;
   font-size: 1.1875rem;
   border: none;
   color: white;
   background-color: #248A83;
-  font-family: "novecentosanswide"; }
+  font-family: "novecentosanswide";
+  text-decoration: none; }
+
+.adv-btn:visited {
+  color: white; }
 
 #primary-menu li a:hover {
   color: #f0e4d1; }

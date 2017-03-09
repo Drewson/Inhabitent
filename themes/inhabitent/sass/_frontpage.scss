@@ -154,7 +154,7 @@
     width: 1120px;
     margin: 0 auto;
     margin-bottom: 20px;
-    height: 450px;
+    height: 500px;
     color: white;
     font-family: $font_secondary;
         
@@ -170,78 +170,127 @@
         color: white;
     }
 
-    .canoe-pic {
-        height: 100%;
-        width: 47%;
-        float: left;
-        background: url("../../images/adventure-photos/canoe-girl.jpg"),rgba(0,0,0,1);
-        background-size: cover;
-        padding: 0 3%;
-        margin: 0 10px;
+    .adventure-pic {
+        position: relative;
 
-        p {
-            font-size: 2.5rem;
-            line-height: 4rem;
-        }
-    }
-
-    .three-pics {
-        height: 100%;
-        width: 50%;
-        float: right;
-
-        p {
-            line-height: 2rem;
-        }
-
-        .beach-pic {
-            display: inline-block;
-            float: right;
-            height: 48%;
+        .colorMeDark {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
-            url("../../images/adventure-photos/beach-bonfire.jpg");
-            background-position: center;
-            background-size: 100%;
-            overflow: hidden;
-            padding: 0 10px;
-            margin-bottom: 22px;
-
-            p {
-                font-size: 2.5rem;
-                margin-top: 15px;
-                line-height: 3rem;
-            }
+            height: 100%;
+            background: rgba(0,0,0,.3);
         }
-        .mountain-pic {
-            display: inline-block;
-            height: 47%;
-            width: 48%;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
-            url("../../images/adventure-photos/mountain-hikers.jpg");
-            background-size: cover;
-            padding: 0 10px;
-            margin-right: 20px;
 
-            p {
-                font-size: 1.5rem;
-            }
+        p {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 90%;
+            margin: 2px;
         }
-        .night-pic {
-            float: right;
-            height: 47%;
-            width: 48%;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
-            url("../../images/adventure-photos/night-sky.jpg");
-            background-size: contain;
-            padding: 0 10px;
 
-            p {
-                font-size: 1.5rem;
-            }
+        a {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            height: 45px;
+            width: 140px;
+            margin: 0;
+            padding: 12px;
+            text-align: center;
         }
     }
 
+    :nth-child(1) {
+        float: left;
+        width: 50%;
+        height: 100%;
+        font-size: 48px;
+        position: relative;
+        overflow: hidden;
+
+        p {
+            font-size: 48px;
+        }
+
+        img {
+            width: auto;
+            max-width: none;
+            max-height: 620px;
+            position: absolute;
+            top: 0;
+            left: -70px;
+        }
+    }
+
+    :nth-child(2) {
+        font-size: 38px;
+        float: right;
+        width: 48%;
+        height: 48%;
+        margin-bottom: 20px;
+        overflow: hidden;
+        position: relative;
+
+        p {
+            font-size: 38px;
+        }
+
+        img {
+            width: 100%;
+            max-width: none;
+            max-height: 620px;
+            position: absolute;
+            top: 0;
+            
+        }
+    }
+
+    :nth-child(3) {
+        float: right;
+        width: 23%;
+        height: 48%;
+        overflow: hidden;
+        position: relative;
+
+        p {
+            font-size: 25px;
+        }        
+
+        img {
+            width: auto;
+            max-width: none;
+            max-height: 620px;
+            position: absolute;
+            top: 0;
+            left: -70px;
+        }
+    }
+
+    :nth-child(4) {
+        float: right;
+        width: 23%;
+        height: 48%;
+        margin-right: 20px;
+        overflow: hidden;
+        position: relative;
+
+        p{
+            font-size: 25px;
+        }
+        
+
+        img {
+            width: auto;
+            max-width: none;
+            max-height: 620px;
+            position: absolute;
+            top: 0;
+            left: -70px;
+        }
+    }
+    
 }
 
 .btn-wrp {
@@ -250,14 +299,18 @@
     margin-bottom: 30px;
 }
 .adv-btn {
-    width: 220px;
-    height: 50px;
+    padding: 10px 20px;
     margin: 0 auto;
     font-size: 1.1875rem;
     border: none;
     color: white;
     background-color:#248A83;
     font-family: $font_secondary;
+    text-decoration: none;
+}
+
+.adv-btn:visited {
+    color: white;
 }
 
 #primary-menu {

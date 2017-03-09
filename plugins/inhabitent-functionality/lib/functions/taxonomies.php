@@ -45,3 +45,4 @@ function inhabitent_tax_product_type() {
 
 }
 add_action( 'init', 'inhabitent_tax_product_type', 0 );
+

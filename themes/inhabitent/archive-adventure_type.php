@@ -7,9 +7,9 @@
 
 get_header(); ?>
 <div id="content" class="site-content">
-	<div id="primary" class="content-area content">
+	<div class="content-area content">
 		<main id="main" class="site-main" role="main">
-		<h1 class="search-title">Month: <?php echo get_the_date();?></h1>
+		<h1 class="adventure-title">Latest Adventures</h1>
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
@@ -19,12 +19,22 @@ get_header(); ?>
 			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content' ); ?>
-				<a href="<?php the_permalink(); ?> ">Read More &rarr;</a>
+			<div class="adventure-home">
+			<?php while ( have_posts() ) : the_post(); ?>
+			
+				<div class="adventure-pic">
+					<?php the_post_thumbnail('large'); ?>
+					<span class="colorMeDark"></span>
+					<span class="adv-text">
+						<p><?php the_title(); ?></p>
+						<a class="read-more" href="<?php the_permalink(); ?> ">Read More</a>
+					</span>
+				</div>
+				
 			<?php endwhile; ?>
 
+			</div>
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
@@ -35,8 +45,6 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 
 </div>
 <?php get_footer(); ?>

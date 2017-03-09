@@ -49,27 +49,24 @@ get_header('home'); ?>
 		</div>
 
 		<h2>Latest Adventures</h2>
+
+		<?php $loop = new WP_Query( array( 
+        'post_type' => 'adventure_type',
+        'posts_per_page' => 4 ) ); ?>
+
 		<div class="latest-adventures">
-			<div class="canoe-pic">
-				<p>Getting Back to Nature in a Canoe</p>
-				<a class="read-more" href="<?php the_permalink(); ?> ">Read More</a>
-			</div>
-			<div class="three-pics">
-				<div class="beach-pic">
-					<p>A Night with Friends at the Beach</p>
+		<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>  
+				<div class="adventure-pic">
+					<?php the_post_thumbnail('large'); ?>
+					<span class="colorMeDark"></span>
+					<p><?php the_title(); ?></p>
 					<a class="read-more" href="<?php the_permalink(); ?> ">Read More</a>
+						
 				</div>
-				<div class="mountain-pic">
-					<p>Taking in the View at Big Mountain</p>
-					<a class="read-more" href="<?php the_permalink(); ?> ">Read More</a>
-				</div>
-				<div class="night-pic">
-					<p>Star-Gazing at the Night Sky</p>
-					<a class="read-more" href="<?php the_permalink(); ?> ">Read More</a>
-				</div>
-			</div>
+		<?php endwhile; ?>  
 		</div>
-		<div class="btn-wrp"><button class="adv-btn">More Adventures</button></div>
+
+		<div class="btn-wrp"><a href="<?php echo get_post_type_archive_link( 'adventure_type' ); ?>" class="adv-btn">More Adventures</a></div>
 
 
 	</div>

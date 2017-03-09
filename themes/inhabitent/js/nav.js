@@ -1,5 +1,6 @@
 (function($){
 
+    //WHEN YOU CLICK THE SEARCH ICON, THE SEARCH FIELD ANIMATES
     $('.fa-search').on('click', function(event){
         event.preventDefault();
         
@@ -7,6 +8,8 @@
         $('.search-field').focus();
     })
     
+
+    //THE NAV STRETCH GOAL, WHEN YOU REACH A CERTAIN POINT ON THE PAGE
     $(window).scroll(function() {
         event.preventDefault();
         var scroll = $(window).scrollTop();
