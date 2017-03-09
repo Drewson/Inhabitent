@@ -859,8 +859,7 @@ fieldset {
       font-size: 2.0625rem;
       text-decoration: none;
       text-transform: uppercase;
-      display: inline-block;
-      margin-bottom: 100px; }
+      display: inline-block; }
   .single-post .entry-header .entry-meta {
     font-family: "novecentosanswide";
     font-size: 1rem;
@@ -903,8 +902,7 @@ fieldset {
       font-size: 2.0625rem;
       text-decoration: none;
       text-transform: uppercase;
-      display: inline-block;
-      margin-bottom: 100px; }
+      display: inline-block; }
   .blog .entry-header .entry-meta {
     font-family: "novecentosanswide";
     font-size: 1rem;
@@ -941,8 +939,7 @@ fieldset {
       font-size: 2.0625rem;
       text-decoration: none;
       text-transform: uppercase;
-      display: inline-block;
-      margin-bottom: 100px; }
+      display: inline-block; }
   .archive .entry-header .entry-meta {
     font-family: "novecentosanswide";
     font-size: 1rem;
@@ -964,6 +961,7 @@ fieldset {
   height: 70px;
   padding: 15px;
   margin: 0 20px 60px 0;
+  color: black;
   background-color: white;
   text-transform: uppercase;
   font-size: .875rem; }
@@ -1251,7 +1249,9 @@ ol {
     display: inline-block;
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
-    margin: 10px;
+    margin: 10px 0;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
     position: relative;
     overflow: hidden; }
     .adventure-home .adventure-pic img {
@@ -1266,26 +1266,25 @@ ol {
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.3); }
-    .adventure-home .adventure-pic p {
-      position: absolute;
-      color: white;
-      font-size: 48px;
-      top: 20px;
-      left: 20px;
-      width: 90%; }
-    .adventure-home .adventure-pic .read-more {
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-      height: 50px; }
-    .adventure-home .adventure-pic .read-more {
-      background: transparent;
-      border: 1px solid white;
-      color: white; }
-    .adventure-home .adventure-pic .read-more:hover {
-      background-color: #1f7a74;
-      border: none;
-      color: white; }
+
+.adv-text {
+  position: absolute;
+  top: 20px;
+  left: 20px; }
+  .adv-text p {
+    line-height: 3.5rem;
+    color: white;
+    font-size: 48px;
+    width: 80%; }
+  .adv-text .read-more {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    height: 50px; }
+  .adv-text .read-more:hover {
+    background-color: #1f7a74;
+    border: none;
+    color: white; }
 
 .hero-banner {
   height: 800px;
@@ -1381,8 +1380,6 @@ ol {
       height: 50px;
       width: 120px;
       margin-left: 10px;
-      position: absolute;
-      bottom: -50px;
       color: black;
       padding-bottom: 5px; }
     .recent-posts .recent-post .read-more:hover {
@@ -1418,14 +1415,6 @@ ol {
   height: 500px;
   color: white;
   font-family: "novecentosanswide"; }
-  .latest-adventures .read-more {
-    background: transparent;
-    border: 1px solid white;
-    color: white; }
-  .latest-adventures .read-more:hover {
-    background-color: #1f7a74;
-    border: none;
-    color: white; }
   .latest-adventures .adventure-pic {
     position: relative; }
     .latest-adventures .adventure-pic .colorMeDark {
@@ -1435,21 +1424,33 @@ ol {
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.3); }
-    .latest-adventures .adventure-pic p {
+    .latest-adventures .adventure-pic .adv-text {
       position: absolute;
-      top: 20px;
-      left: 20px;
-      width: 90%;
-      margin: 2px; }
-    .latest-adventures .adventure-pic a {
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-      height: 45px;
-      width: 140px;
-      margin: 0;
-      padding: 12px;
-      text-align: center; }
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+      .latest-adventures .adventure-pic .adv-text p {
+        display: inline;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        height: 40px;
+        width: 100%; }
+      .latest-adventures .adventure-pic .adv-text .read-more {
+        display: inline;
+        background: transparent;
+        border: 1px solid white;
+        color: white;
+        height: auto;
+        width: auto;
+        padding: 5px 10px;
+        font-size: 16px;
+        -ms-flex-item-align: start;
+            align-self: flex-start; }
+      .latest-adventures .adventure-pic .adv-text .read-more:hover {
+        background-color: #1f7a74;
+        border: none;
+        color: white; }
   .latest-adventures :nth-child(1) {
     float: left;
     width: 50%;
@@ -1527,7 +1528,8 @@ ol {
   color: white;
   background-color: #248A83;
   font-family: "novecentosanswide";
-  text-decoration: none; }
+  text-decoration: none;
+  text-transform: uppercase; }
 
 .adv-btn:visited {
   color: white; }

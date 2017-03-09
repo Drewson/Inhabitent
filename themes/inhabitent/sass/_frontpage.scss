@@ -105,8 +105,6 @@
             height: 50px;
             width: 120px;
             margin-left: 10px;
-            position: absolute;
-            bottom: -50px;
             color: black;
             padding-bottom: 5px;
         }
@@ -157,18 +155,6 @@
     height: 500px;
     color: white;
     font-family: $font_secondary;
-        
-    .read-more {
-        background: rgba(0,0,0,0);
-        border: 1px solid white;
-        color: white;
-    }
-
-    .read-more:hover {
-        background-color: #1f7a74;
-        border: none;
-        color: white;
-    }
 
     .adventure-pic {
         position: relative;
@@ -182,23 +168,37 @@
             background: rgba(0,0,0,.3);
         }
 
-        p {
+        .adv-text {
             position: absolute;
-            top: 20px;
-            left: 20px;
-            width: 90%;
-            margin: 2px;
-        }
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
 
-        a {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            height: 45px;
-            width: 140px;
-            margin: 0;
-            padding: 12px;
-            text-align: center;
+            p {
+                display: inline;
+                flex-basis: 100%;
+                height: 40px;
+                width: 100%;
+            }
+
+            .read-more {
+                display: inline;
+                background: rgba(0,0,0,0);
+                border: 1px solid white;
+                color: white;
+                height: auto;
+                width: auto;
+                padding: 5px 10px;
+                font-size: 16px;
+                align-self: flex-start;
+            }
+
+            .read-more:hover {
+                background-color: #1f7a74;
+                border: none;
+                color: white;
+            }
         }
     }
 
@@ -307,6 +307,7 @@
     background-color:#248A83;
     font-family: $font_secondary;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .adv-btn:visited {

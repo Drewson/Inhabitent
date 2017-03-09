@@ -59,9 +59,10 @@ get_header('home'); ?>
 				<div class="adventure-pic">
 					<?php the_post_thumbnail('large'); ?>
 					<span class="colorMeDark"></span>
-					<p><?php the_title(); ?></p>
-					<a class="read-more" href="<?php the_permalink(); ?> ">Read More</a>
-						
+					<div class="adv-text">
+						<p><?php the_title(); ?></p>
+						<a class="read-more" href="<?php the_permalink(); ?> ">Read More</a>
+					</div>
 				</div>
 		<?php endwhile; ?>  
 		</div>
