@@ -395,6 +395,11 @@ a:hover {
 p {
   line-height: 1.75; }
 
+button {
+  font-family: "novecentosanswide";
+  text-decoration: none;
+  text-transform: uppercase; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -965,6 +970,7 @@ fieldset {
   text-decoration: none;
   border: 1px solid black;
   font-family: "novecentosanswide";
+  padding: 10px 20px;
   margin: 0 20px 60px 0;
   color: black;
   background-color: white;
@@ -1374,7 +1380,6 @@ ol {
       padding: 0 10px 20px 10px;
       letter-spacing: 2px; }
     .home .recent-posts .recent-post .read-more {
-      padding: 10px 20px;
       margin-left: 10px; }
     .home .recent-posts .recent-post .post-image {
       width: 100%;
@@ -1385,7 +1390,6 @@ ol {
         height: 100%; }
 
 .home h2 {
-  font-family: "novecentosanswide";
   font-weight: normal;
   margin: 60px 0;
   font-size: 2.375rem;
@@ -1418,7 +1422,8 @@ ol {
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      width: 85%; }
       .home .latest-adventures .adventure-pic .adv-text p {
         display: inline;
         -ms-flex-preferred-size: 100%;
@@ -1477,61 +1482,38 @@ ol {
     .home .latest-adventures :nth-child(2) img {
       width: 100%;
       left: 0; }
+  .home .latest-adventures :nth-child(3), .home .latest-adventures :nth-child(4) {
+    float: right;
+    width: 23.5%;
+    height: 48%;
+    overflow: hidden;
+    position: relative; }
+    .home .latest-adventures :nth-child(3) .adv-text p, .home .latest-adventures :nth-child(4) .adv-text p {
+      font-size: 25px;
+      line-height: 2rem; }
+    .home .latest-adventures :nth-child(3) img, .home .latest-adventures :nth-child(4) img {
+      width: auto;
+      max-width: none;
+      max-height: 620px;
+      position: absolute;
+      top: 0;
+      left: -70px; }
   .home .latest-adventures :nth-child(3) {
-    float: right;
-    width: 23.5%;
-    height: 48%;
-    overflow: hidden;
-    position: relative; }
-    .home .latest-adventures :nth-child(3) .adv-text p {
-      font-size: 25px;
-      line-height: 2rem; }
-    .home .latest-adventures :nth-child(3) img {
-      width: auto;
-      max-width: none;
-      max-height: 620px;
-      position: absolute;
-      top: 0;
-      left: -70px; }
-  .home .latest-adventures :nth-child(4) {
-    float: right;
-    width: 23.5%;
-    height: 48%;
-    margin-right: 20px;
-    overflow: hidden;
-    position: relative; }
-    .home .latest-adventures :nth-child(4) .adv-text p {
-      font-size: 25px;
-      line-height: 2rem; }
-    .home .latest-adventures :nth-child(4) img {
-      width: auto;
-      max-width: none;
-      max-height: 620px;
-      position: absolute;
-      top: 0;
-      left: -70px; }
-
-.home .btn-wrp {
-  width: 1120px;
-  margin-left: 69px;
-  margin-bottom: 30px; }
+    margin-left: 20px; }
 
 .home .adv-btn {
   padding: 10px 20px;
-  margin: 0 auto;
+  margin: 0 10%;
   font-size: 1.1875rem;
   border: none;
   color: white;
   background-color: #248A83;
-  font-family: "novecentosanswide";
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: "novecentosanswide"; }
 
 .home .adv-btn:visited {
   color: white; }
-
-.home #primary-menu li a:hover {
-  color: #f0e4d1; }
 
 .home .read-more:hover {
   background-color: #1f7a74;

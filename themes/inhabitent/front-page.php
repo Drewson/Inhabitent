@@ -67,7 +67,7 @@ get_header('home'); ?>
 		<?php endwhile; ?>  
 		</div>
 
-		<div class="btn-wrp"><a href="<?php echo get_post_type_archive_link( 'adventure_type' ); ?>" class="adv-btn">More Adventures</a></div>
+		<a href="<?php echo get_post_type_archive_link( 'adventure_type' ); ?>" class="adv-btn">More Adventures</a>
 
 
 	</div>

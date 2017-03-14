@@ -88,3 +88,9 @@ a:hover {
 p{
 	line-height: 1.75;
 }
+
+button {
+	font-family: $font_secondary;
+    text-decoration: none;
+    text-transform: uppercase;
+}
