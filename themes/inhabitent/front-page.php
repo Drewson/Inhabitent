@@ -71,5 +71,5 @@ get_header('home'); ?>
 
 
 	</div>
-
+<!--tet-->
 <?php get_footer(); ?>
